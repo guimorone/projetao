@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 import Center from '../components/Center';
 import Navbar from '../components/Navbar';
@@ -7,11 +7,13 @@ import { capitalizeString, formatPathname } from '../utils';
 import { useDocumentTitle } from '../utils/hooks';
 import { DEFAULT_DOCUMENT_TITLE } from '../constants';
 import { HOME } from '../constants/paths';
+import type { IPolls } from '../@types';
 
 export default function DefaultPage() {
 	const { pathname } = useLocation();
 	const navigate = useNavigate();
 	const [_, setDocumentTitle] = useDocumentTitle();
+	const [polls, setPolls] = useState<IPolls | []>([]);
 
 	useEffect(() => {
 		if (pathname === '/') navigate(HOME);
@@ -23,7 +25,7 @@ export default function DefaultPage() {
 		<div className="flex flex-col mx-auto justify-between min-h-screen">
 			<Navbar />
 			<Center className="flex-col w-full px-6 lg:px-8 py-12 max-w-7xl" HtmlTag="main">
-				<Outlet />
+				<Outlet context={{ polls, setPolls }} />
 			</Center>
 			<Footer />
 		</div>
