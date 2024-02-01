@@ -25,12 +25,12 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 		<header
 			className={classNames(
 				show ? 'visible transition-all duration-500' : 'invisible transition-all duration-500 -translate-y-full',
-				'sticky inset-x-0 top-0 z-50'
+				'sticky inset-x-0 top-0 z-40 w-fit ml-auto md:mx-auto'
 			)}
 		>
-			<nav className="md:mt-4 relative" aria-label="Global">
+			<nav className="md:mt-4" aria-label="Global">
 				<div className="max-w-7xl mx-auto w-fit md:bg-gray-900 rounded-full md:shadow-md h-auto max-h-20 px-8 py-6 gap-x-2">
-					<div className="block md:hidden absolute right-8">
+					<div className="block md:hidden">
 						<button
 							type="button"
 							className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900"
