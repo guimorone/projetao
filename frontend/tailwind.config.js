@@ -10,6 +10,7 @@ export default {
     extend: {
       colors: { sky: colors.sky, teal: colors.teal, rose: colors.rose },
       width: { 110: '30rem', 200: '40rem' },
+      height: { 110: '30rem', 200: '40rem' },
       maxHeight: { 110: '30rem', 200: '40rem' },
       transitionProperty: { opacity: 'opacity' },
       transitionDuration: { 300: '300ms' },
