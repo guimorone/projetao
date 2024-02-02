@@ -8,7 +8,7 @@ import type { IPolls } from './@types';
 dotenv.config();
 
 const app: Express = express();
-app.use(cors<Request>({ credentials: true }));
+app.use(cors<Request>());
 const port = process.env.PORT || 3000;
 
 const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive.file'];
