@@ -14,6 +14,7 @@ export default {
       maxHeight: { 110: '30rem', 200: '40rem' },
       transitionProperty: { opacity: 'opacity' },
       transitionDuration: { 300: '300ms' },
+      backgroundImage: { 'home-poster': "url('/public/poster.jpg')" },
     },
   },
   plugins: [forms, typography, flowbite],

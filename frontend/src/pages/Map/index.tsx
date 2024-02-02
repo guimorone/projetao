@@ -58,8 +58,8 @@ export default function Map() {
 					{polls?.map((p, index) => (
 						<Marker key={index} position={p.coords} icon={legalIcon}>
 							<Popup>
-								<div className="space-y-2 text-sm md:text-base z-50">
-									<h2 className="text-semibold text-base md:text-lg text-gray-700 mb-4">{p.poll}</h2>
+								<div className="space-y-2 text-base md:text-lg z-50">
+									<h2 className="text-semibold text-lg md:text-xl text-gray-700 mb-4">{p.poll}</h2>
 									<p>
 										<strong>Endereço: </strong>
 										{p.address || 'Não informado'}
@@ -67,7 +67,7 @@ export default function Map() {
 									<p>
 										<strong>1ª Opção: </strong>
 										{p.option1}
-										<span className="text-xs">
+										<span className="text-sm md:text-base">
 											{' '}
 											({p.votes1} {`${p.votes1 === 1 ? 'voto' : 'votos'}`})
 										</span>
@@ -75,7 +75,7 @@ export default function Map() {
 									<p>
 										<strong>2ª Opção: </strong>
 										{p.option2}
-										<span className="text-xs">
+										<span className="text-sm md:text-base">
 											{' '}
 											({p.votes2} {`${p.votes2 === 1 ? 'voto' : 'votos'}`})
 										</span>

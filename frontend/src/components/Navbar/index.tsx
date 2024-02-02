@@ -11,7 +11,7 @@ import type { INavbarProps } from './types';
 const navigation = [
 	{ name: 'Início', href: paths.HOME, Icon: HomeIcon, useLink: true },
 	{ name: 'Mapa', href: paths.MAP, Icon: MapIcon, useLink: true },
-	{ name: 'Sugestões', href: paths.SUGGESTION, Icon: RiSurveyFill, useLink: true },
+	{ name: 'Sugestões & Feedbacks', href: paths.SUGGESTION, Icon: RiSurveyFill, useLink: true },
 ];
 
 const Navbar: FC<INavbarProps> = ({ show = true }) => {
@@ -54,10 +54,10 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 												isCurrent
 													? 'text-teal-400 hover:cursor-default relative'
 													: 'text-gray-100 hover:underline hover:underline-offset-2 hover:cursor-pointer',
-												'flex gap-x-1.5 items-center text-sm font-semibold leading-6'
+												'flex gap-x-1.5 items-center text-lg font-semibold leading-6'
 											)}
 										>
-											<item.Icon className="w-4 h-4" />
+											<item.Icon className="w-5 h-5" />
 											<span>{item.name}</span>
 											{isCurrent && (
 												<span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-400/0 via-teal-400/40 to-teal-400/0"></span>
@@ -107,7 +107,7 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 														isCurrent
 															? 'bg-gray-700 hover:cursor-default text-gray-100'
 															: 'hover:bg-gray-700 hover:cursor-pointer text-gray-700 hover:text-gray-100',
-														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-base font-semibold leading-7'
+														'-mx-3 flex items-center gap-x-1.5 rounded-lg px-3 py-2 text-2xl font-semibold leading-7'
 													)}
 												>
 													<item.Icon className="w-4 h-4" />

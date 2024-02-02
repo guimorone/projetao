@@ -3,7 +3,7 @@ import { useLocation, useNavigate, Outlet } from 'react-router-dom';
 import Center from '../components/Center';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { capitalizeString, formatPathname } from '../utils';
+import { capitalizeString, formatPathname, classNames } from '../utils';
 import { useDocumentTitle } from '../utils/hooks';
 import { DEFAULT_DOCUMENT_TITLE } from '../constants';
 import { HOME } from '../constants/paths';
@@ -22,7 +22,12 @@ export default function DefaultPage() {
 	}, [pathname]);
 
 	return (
-		<div className="flex flex-col mx-auto justify-between min-h-screen">
+		<div
+			className={classNames(
+				pathname === HOME && 'bg-home-poster bg-cover lg:bg-repeat-round',
+				'flex flex-col mx-auto justify-between min-h-screen'
+			)}
+		>
 			<Navbar />
 			<Center className="flex-col w-full px-6 lg:px-8 py-12 max-w-7xl" HtmlTag="main">
 				<Outlet context={{ polls, setPolls }} />
