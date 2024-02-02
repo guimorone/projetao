@@ -4,11 +4,14 @@ import cors from 'cors';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 import type { IPolls } from './@types';
+import { parseFeedbackScore } from './utils';
 
 dotenv.config();
 
 const app: Express = express();
 app.use(cors<Request>());
+app.use(express.json());
+
 const port = process.env.PORT || 3000;
 
 const scopes = ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive.file'];
@@ -21,7 +24,7 @@ const serviceAccountAuth = new JWT({
 
 const doc = new GoogleSpreadsheet(process.env.GOOGLE_SPREADSHEET_ID || '', serviceAccountAuth);
 
-app.route('/spreadsheet').get(async (req: Request, res: Response) => {
+app.get('/spreadsheet', async (_req: Request, res: Response) => {
   await doc.loadInfo();
 
   const sheet = doc.sheetsByTitle['polls'];
@@ -41,6 +44,25 @@ app.route('/spreadsheet').get(async (req: Request, res: Response) => {
   });
 
   res.status(200).send(data);
+});
+
+app.post('/suggestion', async (req: Request, res: Response) => {
+  await doc.loadInfo();
+
+  const sheet = doc.sheetsByTitle['suggestions'];
+  await sheet.addRow(req.body);
+
+  res.status(201).send('Sucesso!');
+});
+
+app.post('/feedback', async (req: Request, res: Response) => {
+  await doc.loadInfo();
+
+  const sheet = doc.sheetsByTitle['feedbacks'];
+  req.body.score = parseFeedbackScore(req.body.score);
+  await sheet.addRow(req.body);
+
+  res.status(201).send('Sucesso!');
 });
 
 app.listen(port, () => console.log(`[server]: Server is running on port ${port}`));

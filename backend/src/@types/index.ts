@@ -11,9 +11,11 @@ export interface IPolls {
   votes2: number;
 }
 
-export interface IFeedbacks {
+export interface ISuggestion {
   name?: string;
-  score: number;
-  feedback: string;
+  message: string;
 }
 
+export interface IFeedbacks extends Partial<ISuggestion> {
+  score: null | 'veryBad' | 'bad' | 'neutral' | 'good' | 'veryGood';
+}

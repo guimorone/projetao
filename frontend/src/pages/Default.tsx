@@ -10,29 +10,29 @@ import { HOME } from '../constants/paths';
 import type { IPolls } from '../@types';
 
 export default function DefaultPage() {
-  const { pathname } = useLocation();
-  const navigate = useNavigate();
-  const [_, setDocumentTitle] = useDocumentTitle();
-  const [polls, setPolls] = useState<IPolls | []>([]);
+	const { pathname } = useLocation();
+	const navigate = useNavigate();
+	const [_, setDocumentTitle] = useDocumentTitle();
+	const [polls, setPolls] = useState<IPolls | []>([]);
 
-  useEffect(() => {
-    if (pathname === '/') navigate(HOME);
-    else if (pathname === HOME) setDocumentTitle(DEFAULT_DOCUMENT_TITLE);
-    else setDocumentTitle(capitalizeString(formatPathname(pathname.slice(1))) + ' / ' + DEFAULT_DOCUMENT_TITLE);
-  }, [pathname]);
+	useEffect(() => {
+		if (pathname === '/') navigate(HOME);
+		else if (pathname === HOME) setDocumentTitle(DEFAULT_DOCUMENT_TITLE);
+		else setDocumentTitle(capitalizeString(formatPathname(pathname.slice(1))) + ' / ' + DEFAULT_DOCUMENT_TITLE);
+	}, [pathname]);
 
-  return (
-    <div
-      className={classNames(
-        pathname === HOME && 'bg-home-poster bg-cover bg-no-repeat md:bg-contain md:bg-repeat-round',
-        'flex flex-col mx-auto justify-between min-h-screen'
-      )}
-    >
-      <Navbar />
-      <Center className="flex-col w-full px-6 lg:px-8 py-12 max-w-7xl" HtmlTag="main">
-        <Outlet context={{ polls, setPolls }} />
-      </Center>
-      <Footer />
-    </div>
-  );
+	return (
+		<div
+			className={classNames(
+				pathname === HOME && 'bg-home-poster bg-cover bg-no-repeat md:bg-contain md:bg-repeat-round',
+				'flex flex-col mx-auto justify-between min-h-screen'
+			)}
+		>
+			<Navbar />
+			<Center className="flex-col w-full px-6 lg:px-8 py-12 max-w-7xl" HtmlTag="main">
+				<Outlet context={{ polls, setPolls }} />
+			</Center>
+			<Footer />
+		</div>
+	);
 }
