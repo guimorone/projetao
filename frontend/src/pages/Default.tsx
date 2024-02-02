@@ -24,7 +24,7 @@ export default function DefaultPage() {
 	return (
 		<div
 			className={classNames(
-				pathname === HOME && 'bg-home-poster bg-cover lg:bg-repeat-round',
+				pathname === HOME && 'bg-home-poster bg-cover bg-no-repeat md:bg-contain md:bg-repeat-round',
 				'flex flex-col mx-auto justify-between min-h-screen'
 			)}
 		>

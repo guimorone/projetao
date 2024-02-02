@@ -1,4 +1,5 @@
 import * as paths from '../constants/paths';
+import type { FormEvent } from 'react';
 
 export function classNames(...classes: any[]): string {
 	return classes.filter(Boolean).join(' ');
@@ -24,4 +25,30 @@ export const formatPathname = (str: string): string => {
 		default:
 			return str;
 	}
+};
+
+export const checkIfObjectIsEmpty = (obj: object): boolean =>
+	!obj || (!Object.keys(obj).length && Object.getPrototypeOf(obj) === Object.prototype);
+
+export const onSubmitFormHandler = (
+	event: FormEvent<HTMLFormElement>,
+	preventDefault = true
+): { [key: string]: any } => {
+	if (preventDefault) event.preventDefault();
+
+	const newParams: { [key: string]: any } = {};
+	const elements = Array.from(event.currentTarget.elements);
+
+	elements.forEach(element => {
+		if (
+			(element instanceof HTMLInputElement ||
+				element instanceof HTMLTextAreaElement ||
+				element instanceof HTMLSelectElement) &&
+			element.name
+		)
+			newParams[element.name] =
+				element.getAttribute('type') === 'checkbox' && 'checked' in element ? element.checked : element.value;
+	});
+
+	return newParams;
 };
