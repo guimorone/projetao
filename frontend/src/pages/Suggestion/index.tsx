@@ -200,7 +200,7 @@ export default function Suggestion() {
 						<label htmlFor="message" className="block text-lg font-black leading-6 text-gray-900">
 							Como você avalia nosso produto? <span className="text-red-600">*</span>
 						</label>
-						<div className="mt-4 flex items-center font-bold w-full justify-between text-lg">
+						<div className="mt-4 flex items-center font-bold w-full justify-between text-sm sm:text-lg gap-x-2 sm:gap-x-0">
 							<span>Muito ruim</span>
 							<button
 								type="button"
@@ -214,7 +214,7 @@ export default function Suggestion() {
 										feedbackFormData.score === 'veryBad'
 											? 'ring-4 ring-offset-8 ring-red-600 rounded-full'
 											: feedbackFormData.score !== null && 'opacity-20',
-										'text-red-600 hover:text-red-500 w-auto h-16'
+										'text-red-600 hover:text-red-500 w-auto h-8 sm:h-16'
 									)}
 									aria-hidden="true"
 								/>
@@ -229,7 +229,7 @@ export default function Suggestion() {
 										feedbackFormData.score === 'bad'
 											? 'ring-4 ring-offset-8 ring-orange-500 rounded-full'
 											: feedbackFormData.score !== null && 'opacity-20',
-										'text-orange-500 hover:text-orange-400 w-auto h-16'
+										'text-orange-500 hover:text-orange-400 w-auto h-8 sm:h-16'
 									)}
 									aria-hidden="true"
 								/>
@@ -246,7 +246,7 @@ export default function Suggestion() {
 										feedbackFormData.score === 'neutral'
 											? 'ring-4 ring-offset-8 ring-yellow-400 rounded-full'
 											: feedbackFormData.score !== null && 'opacity-20',
-										'text-yellow-400 hover:text-yellow-300 w-auto h-16'
+										'text-yellow-400 hover:text-yellow-300 w-auto h-8 sm:h-16'
 									)}
 									aria-hidden="true"
 								/>
@@ -261,7 +261,7 @@ export default function Suggestion() {
 										feedbackFormData.score === 'good'
 											? 'ring-4 ring-offset-8 ring-lime-600 rounded-full'
 											: feedbackFormData.score !== null && 'opacity-20',
-										'text-lime-600 hover:text-lime-500 w-auto h-16'
+										'text-lime-600 hover:text-lime-500 w-auto h-8 sm:h-16'
 									)}
 									aria-hidden="true"
 								/>
@@ -278,7 +278,7 @@ export default function Suggestion() {
 										feedbackFormData.score === 'veryGood'
 											? 'ring-4 ring-offset-8 ring-emerald-500 rounded-full'
 											: feedbackFormData.score !== null && 'opacity-20',
-										'text-emerald-500 hover:text-emerald-400 w-auto h-16'
+										'text-emerald-500 hover:text-emerald-400 w-auto h-8 sm:h-16'
 									)}
 									aria-hidden="true"
 								/>
