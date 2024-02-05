@@ -5,6 +5,7 @@ import { Spinner } from 'flowbite-react';
 import { divIcon, type LatLngExpression, type Map as MapType } from 'leaflet';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { TrashIcon } from '@heroicons/react/20/solid';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 import { TbViewfinder } from 'react-icons/tb';
 import { useTypedOutletContext } from '../../utils/hooks';
 import { RECIFE_COORDS } from '../../constants';
@@ -42,11 +43,18 @@ export default function Map() {
 		if (navigator.geolocation) navigator.geolocation.getCurrentPosition(success);
 	}, []);
 
-	const Icon = renderToStaticMarkup(<TrashIcon className="w-full h-full text-blue-600" />);
-	const legalIcon = divIcon({
-		html: Icon,
+	const TrashMapIcon = renderToStaticMarkup(<TrashIcon className="w-full h-full text-blue-600" />);
+	const trashIcon = divIcon({
+		html: TrashMapIcon,
 		iconSize: [35, 35],
 		className: 'rounded-full bg-white p-1.5 shadow-md flex items-center',
+	});
+
+	const MarkerMapIcon = renderToStaticMarkup(<FaMapMarkerAlt className="w-full h-full text-red-600" />);
+	const markerIcon = divIcon({
+		html: MarkerMapIcon,
+		iconSize: [50, 50],
+		className: 'rounded-full bg-transparent',
 	});
 
 	const recentralizeMap = (): void => {
@@ -63,12 +71,12 @@ export default function Map() {
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
 				{coords !== undefined && (
-					<Marker position={coords}>
+					<Marker position={coords} icon={markerIcon}>
 						<Popup className="text-lg">Você está aqui!</Popup>
 					</Marker>
 				)}
 				{polls?.map((p, index) => (
-					<Marker key={index} position={p.coords} icon={legalIcon}>
+					<Marker key={index} position={p.coords} icon={trashIcon}>
 						<Popup>
 							<div className="space-y-2 text-base md:text-lg z-50">
 								<h2 className="text-semibold text-lg md:text-xl text-gray-700 mb-4">{p.poll}</h2>
