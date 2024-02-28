@@ -1,0 +1,12 @@
+idf_component_register(SRCS "wifi_lib.c"
+                    INCLUDE_DIRS "include"
+                    INCLUDE_DIRS ${SOURCE}
+                    REQUIRES nvs_flash
+                    REQUIRES freertos
+                    REQUIRES esp_wifi
+                    REQUIRES esp_event
+                    REQUIRES log
+                    REQUIRES lwip
+                    REQUIRES main
+                    REQUIRES esp_system
+                    REQUIRES esp_netif)

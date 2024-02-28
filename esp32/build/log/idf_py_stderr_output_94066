@@ -1,0 +1,247 @@
+[0;33m--- esp-idf-monitor 1.4.0 on /dev/ttyUSB0 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0;33m0x40089d15: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1657
+[0m
+[0;33m0x4016935c: http_on_chunk_header at /home/lucca/esp/esp-idf/components/esp_http_client/esp_http_client.c:329
+[0m
+[0;33m0x400014fd: strlen in ROM
+0x4000150d: strlen in ROM
+[0m
+[0;33m0x40089d12: xQueueSemaphoreTake at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1653 (discriminator 1)
+0x400d7f29: http_rest_with_hostname_path at /home/lucca/Documents/projetao/components/http/http.c:274
+0x400d7fd1: http_test_task at /home/lucca/Documents/projetao/components/http/http.c:379 (discriminator 1)
+0x4008be05: vPortTaskWrapper at /home/lucca/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:162
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008139c: call_start_cpu1 at /home/lucca/esp/esp-idf/components/esp_system/port/cpu_start.c:157
+[0m
+[0m

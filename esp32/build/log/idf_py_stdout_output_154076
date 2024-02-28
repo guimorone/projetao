@@ -1,0 +1,791 @@
+��� segment 1: p�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7128
+load:0x40078000,len:15616
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (30) boot: ESP-IDF v5.1.2-602-gdb1e54a0c5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 22 2024 18:05:58[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25ef4h (155380) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00035f1c vaddr=3ffb0000 size=042e4h ( 17124) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003a208 vaddr=40080000 size=05e10h ( 24080) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1d38h (662840) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e1d60 vaddr=40085e10 size=10310h ( 66320) load[0m
+[0;32mI (457) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (457) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu up.[0m
+[0;32mI (469) cpu_start: Starting app cpu, entry point is 0x4008139c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (487) cpu_start: Pro cpu start user code[0m
+[0;32mI (487) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (487) cpu_start: Application information:[0m
+[0;32mI (492) cpu_start: Project name:     projetao[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (501) cpu_start: Compile time:     Feb 22 2024 18:40:09[0m
+[0;32mI (507) cpu_start: ELF file SHA256:  c750fa3364e1eadb...[0m
+[0;32mI (513) cpu_start: ESP-IDF:          v5.1.2-602-gdb1e54a0c5[0m
+[0;32mI (519) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFB8A70 len 00027590 (157 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (559) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 40096120 len 00009EE0 (39 KiB): IRAM[0m
+[0;32mI (574) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;33mW (581) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (595) app_start: Starting scheduler on CPU0[0m
+[0;32mI (599) app_start: Starting scheduler on CPU1[0m
+[0;32mI (599) main_task: Started on CPU0[0m
+[0;32mI (609) main_task: Calling app_main()[0m
+[0;32mI (639) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (639) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (649) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+a
+[0;32mI (659) main_task: Returned from app_main()[0m
+I (669) wifi:wifi driver task: 3ffc28b4, prio:23, stack:6656, core=0
+I (689) wifi:wifi firmware version: e309346
+I (689) wifi:wifi certification version: v7.0
+I (689) wifi:config NVS flash: enabled
+I (689) wifi:config nano formating: disabled
+I (699) wifi:Init data frame dynamic rx buffer num: 32
+I (699) wifi:Init static rx mgmt buffer num: 5
+I (699) wifi:Init management short buffer num: 32
+I (709) wifi:Init dynamic tx buffer num: 32
+I (709) wifi:Init static rx buffer size: 1600
+I (719) wifi:Init static rx buffer num: 10
+I (719) wifi:Init dynamic rx buffer num: 32
+[0;32mI (729) wifi_init: rx ba win: 6[0m
+[0;32mI (729) wifi_init: tcpip mbox: 32[0m
+[0;32mI (729) wifi_init: udp mbox: 6[0m
+[0;32mI (739) wifi_init: tcp mbox: 6[0m
+[0;32mI (739) wifi_init: tcp tx win: 5760[0m
+[0;32mI (739) wifi_init: tcp rx win: 5760[0m
+[0;32mI (749) wifi_init: tcp mss: 1440[0m
+[0;32mI (749) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (759) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (759) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (849) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (849) wifi:enable tsf
+a
+a
+[0;32mI (3349) WIFI: Wifi encontrado: Karen
+[0m
+[0;32mI (3349) WIFI: Melhor Sinal: Karen
+[0m
+E (3349) wifi:NAN WiFi stop
+I (3349) wifi:flush txq
+I (3349) wifi:stop sw txq
+I (3349) wifi:lmac stop hw txq
+I (3359) wifi:Deinit lldesc rx mblock:10
+I (3379) wifi:wifi driver task: 3ffc09f0, prio:23, stack:6656, core=0
+I (3389) wifi:wifi firmware version: e309346
+I (3389) wifi:wifi certification version: v7.0
+I (3399) wifi:config NVS flash: enabled
+I (3399) wifi:config nano formating: disabled
+I (3399) wifi:Init data frame dynamic rx buffer num: 32
+I (3399) wifi:Init static rx mgmt buffer num: 5
+I (3409) wifi:Init management short buffer num: 32
+I (3409) wifi:Init dynamic tx buffer num: 32
+I (3419) wifi:Init static rx buffer size: 1600
+I (3419) wifi:Init static rx buffer num: 10
+I (3429) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3429) wifi_init: rx ba win: 6[0m
+[0;32mI (3429) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3439) wifi_init: udp mbox: 6[0m
+[0;32mI (3439) wifi_init: tcp mbox: 6[0m
+[0;32mI (3439) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3449) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3449) wifi_init: tcp mss: 1440[0m
+[0;32mI (3459) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3459) wifi_init: WiFi RX IRAM OP enabled[0m
+I (3469) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (3469) wifi:enable tsf
+[0;32mI (3469) WIFI: SSID: Karen
+[0m
+[0;32mI (3479) WIFI: PASSWORD: z3klrlip
+[0m
+[0;32mI (3479) WIFI: esp_wifi_connect log: ESP_OK
+[0m
+I (3489) wifi:[0;32mI (3479) WIFI: wifi_init_sta finished.
+[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3499) wifi:state: init -> auth (b0)
+I (3509) wifi:state: auth -> assoc (0)
+I (3539) wifi:state: assoc -> run (10)
+I (3569) wifi:connected with Karen, aid = 3, channel 1, BW20, bssid = 24:fd:0d:cb:f8:7a
+I (3569) wifi:security: WPA2-PSK, phy: bgn, rssi: -69
+I (3579) wifi:pm start, type: 1
+
+I (3579) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+a
+I (3749) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (4589) esp_netif_handlers: sta ip: 10.0.0.101, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (4589) WIFI: got ip: 10.0.0.101[0m
+[0;32mI (4589) WIFI: connected to ap SSID:Karen password:z3klrlip[0m
+a
+b
+[0;32mI (4659) WIFI: Time is not set yet. Connecting to network and getting time over NTP.[0m
+[0;32mI (4659) WIFI: Initializing SNTP[0m
+[0;32mI (4659) WIFI: Waiting for system time to be set... (1/10)[0m
+GPIO[23] intr, val: 1
+Time diff: 4
+ADICIONEI NA VOTACAO 1, TOTAL: 1
+
+Total 1: 1, 2: 0
+I (5299) wifi:<ba-add>idx:0 (ifx:0, 24:fd:0d:cb:f8:7a), tid:0, ssn:4, winSize:64
+I (5349) wifi:[0;32mI (5349) WIFI: Notification of a time synchronization event[0m
+<ba-add>idx:1 (ifx:0, 24:fd:0d:cb:f8:7a), tid:5, ssn:0, winSize:64
+GPIO[23] intr, val: 0
+Time diff: 1709162168
+ADICIONEI NA VOTACAO 1, TOTAL: 2
+
+Total 1: 2, 2: 0
+[0;32mI (6669) WIFI: BEFORE -The current date/time: Wed Feb 28 23:16:13 2024[0m
+[0;32mI (6669) WIFI: The current date/time: Wed Feb 28 20:16:13 2024[0m
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 3
+
+Total 1: 3, 2: 0
+GPIO[23] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 1
+
+Total 1: 3, 2: 1
+[0;32mI (7669) WIFI: Deleting SNTP task
+[0m
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 4
+
+Total 1: 4, 2: 1
+GPIO[23] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 2
+
+Total 1: 4, 2: 2
+GPIO[23] intr, val: 1
+Time diff: 0
+Total 1: 4, 2: 2
+GPIO[23] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 5
+
+Total 1: 5, 2: 2
+Buffer: 0 5 2
+[0;32mI (13639) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (13639) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (14919) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:16:21 GMT[0m
+[0;32mI (14919) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (14929) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (14939) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (14949) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc5fec29eba5b6-GRU[0m
+[0;32mI (14949) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (14959) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (14969) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (14979) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (14989) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=37597aa4-23fa-466d[0m
+[0;32mI (14999) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (14999) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (15009) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (15019) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (15029) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (15039) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (15039) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+Buffer: 0 5 2
+[0;33mW (22589) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (22589) transport_base: Failed to open a new connection[0m
+[0;31mE (22589) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (22589) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (22599) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+GPIO[21] intr, val: 0
+Time diff: 15
+ADICIONEI NA VOTACAO 1, TOTAL: 3
+
+Total 1: 5, 2: 3
+GPIO[21] intr, val: 1
+Time diff: 15
+Total 1: 5, 2: 3
+Buffer: 0 5 3
+GPIO[21] intr, val: 0
+Time diff: 15
+Total 1: 5, 2: 3
+GPIO[21] intr, val: 0
+Time diff: 15
+Total 1: 5, 2: 3
+GPIO[21] intr, val: 1
+Time diff: 16
+ADICIONEI NA VOTACAO 1, TOTAL: 4
+
+Total 1: 5, 2: 4
+[0;32mI (24689) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (24699) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+GPIO[21] intr, val: 0
+Time diff: 17
+ADICIONEI NA VOTACAO 1, TOTAL: 5
+
+Total 1: 5, 2: 5
+GPIO[21] intr, val: 1
+Time diff: 17
+Total 1: 5, 2: 5
+GPIO[21] intr, val: 0
+Time diff: 17
+Total 1: 5, 2: 5
+[0;32mI (25979) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:16:32 GMT[0m
+[0;32mI (25979) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (25989) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (25999) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (26009) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc603148fa1b1d-GRU[0m
+GPIO[21] intr, val: 1
+Time diff: 17
+Total 1: 5, 2: 5
+[0;32mI (26019) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (26029) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (26039) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (26049) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (26049) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=bfe5332c-5dd9-4584[0m
+[0;32mI (26059) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (26069) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (26079) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (26089) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (26089) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (26099) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (26099) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+GPIO[21] intr, val: 0
+Time diff: 17
+Total 1: 5, 2: 5
+GPIO[21] intr, val: 0
+Time diff: 18
+ADICIONEI NA VOTACAO 1, TOTAL: 6
+
+Total 1: 5, 2: 6
+GPIO[21] intr, val: 0
+Time diff: 18
+Total 1: 5, 2: 6
+GPIO[21] intr, val: 0
+Time diff: 18
+Total 1: 5, 2: 6
+GPIO[21] intr, val: 0
+Time diff: 18
+Total 1: 5, 2: 6
+Buffer: 0 5 6
+GPIO[22] intr, val: 0
+Time diff: 20
+ADICIONEI NA VOTACAO 1, TOTAL: 6
+
+Total 1: 6, 2: 6
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 7
+
+Total 1: 7, 2: 6
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 7
+
+Total 1: 7, 2: 7
+GPIO[23] intr, val: 1
+Time diff: 2
+ADICIONEI NA VOTACAO 1, TOTAL: 8
+
+Total 1: 8, 2: 7
+GPIO[23] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 8
+
+Total 1: 8, 2: 8
+GPIO[23] intr, val: 1
+Time diff: 0
+Total 1: 8, 2: 8
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 8, 2: 8
+GPIO[23] intr, val: 1
+Time diff: 0
+Total 1: 8, 2: 8
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 8, 2: 8
+[0;33mW (32889) esp-tls: Failed to open new connection in specified timeout[0m
+[0;31mE (32889) transport_base: Failed to open a new connection[0m
+[0;31mE (32889) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (32889) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (32899) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 9
+
+Total 1: 9, 2: 8
+GPIO[23] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 10
+
+Total 1: 10, 2: 8
+GPIO[23] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 9
+
+Total 1: 10, 2: 9
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 10, 2: 9
+Buffer: 0 10 9
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 11
+
+Total 1: 11, 2: 9
+GPIO[23] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 10
+
+Total 1: 11, 2: 10
+[0;32mI (34939) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (34939) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 12
+
+Total 1: 12, 2: 10
+GPIO[23] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 11
+
+Total 1: 12, 2: 11
+GPIO[23] intr, val: 1
+Time diff: 0
+Total 1: 12, 2: 11
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 12, 2: 11
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 13
+
+Total 1: 13, 2: 11
+GPIO[23] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 12
+
+Total 1: 13, 2: 12
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 13, 2: 12
+GPIO[23] intr, val: 1
+Time diff: 0
+Total 1: 13, 2: 12
+GPIO[23] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 14
+
+Total 1: 14, 2: 12
+GPIO[23] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 13
+
+Total 1: 14, 2: 13
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 14, 2: 13
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 15
+
+Total 1: 15, 2: 13
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 16
+
+Total 1: 16, 2: 13
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 14
+
+Total 1: 16, 2: 14
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 16, 2: 14
+[0;33mW (39959) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (39959) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_EAGAIN[0m
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 17
+
+Total 1: 17, 2: 14
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 15
+
+Total 1: 17, 2: 15
+Buffer: 0 17 15
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 17, 2: 15
+[0;32mI (41899) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (41899) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (43389) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:16:50 GMT[0m
+[0;32mI (43389) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (43399) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (43409) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (43419) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc609cc9a7a501-GRU[0m
+[0;32mI (43419) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (43429) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (43439) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (43449) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (43459) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=d2efe869-9c23-4948[0m
+[0;32mI (43469) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (43469) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (43479) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (43489) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (43499) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (43509) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (43509) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+Buffer: 0 17 15
+[0;32mI (45419) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (45429) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (46669) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:16:53 GMT[0m
+[0;32mI (46669) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (46679) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (46679) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (46689) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc60b2ce3077f6-GRU[0m
+[0;32mI (46699) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (46709) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (46719) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (46729) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (46729) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=49d80598-87e6-459f[0m
+[0;32mI (46739) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (46749) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (46759) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (46769) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (46769) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (46779) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (46779) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+Buffer: 0 17 15
+[0;32mI (48759) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (48769) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (49939) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:16:56 GMT[0m
+[0;32mI (49949) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (49949) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (49959) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (49969) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc60c7a84c0185-GRU[0m
+[0;32mI (49979) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (49979) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (49989) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (49999) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (50009) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=0afec22c-f0a2-46b5[0m
+[0;32mI (50019) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (50029) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (50029) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (50039) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (50049) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (50059) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (50059) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+Buffer: 0 17 15
+[0;31mE (51119) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (51119) esp-tls: create_ssl_handle failed[0m
+[0;31mE (51119) esp-tls: Failed to open new connection[0m
+[0;31mE (51129) transport_base: Failed to open a new connection[0m
+[0;31mE (51129) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (51139) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (51139) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 17 15
+[0;31mE (52199) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (52199) esp-tls: create_ssl_handle failed[0m
+[0;31mE (52199) esp-tls: Failed to open new connection[0m
+[0;31mE (52209) transport_base: Failed to open a new connection[0m
+[0;31mE (52209) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (52219) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (52219) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 17 15
+[0;31mE (53279) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (53279) esp-tls: create_ssl_handle failed[0m
+[0;31mE (53279) esp-tls: Failed to open new connection[0m
+[0;31mE (53289) transport_base: Failed to open a new connection[0m
+[0;31mE (53289) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (53299) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (53299) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 17 15
+[0;31mE (54359) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (54359) esp-tls: create_ssl_handle failed[0m
+[0;31mE (54359) esp-tls: Failed to open new connection[0m
+[0;31mE (54359) transport_base: Failed to open a new connection[0m
+[0;31mE (54369) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (54379) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (54379) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 17 15
+[0;31mE (55449) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (55449) esp-tls: create_ssl_handle failed[0m
+[0;31mE (55449) esp-tls: Failed to open new connection[0m
+[0;31mE (55449) transport_base: Failed to open a new connection[0m
+[0;31mE (55459) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (55459) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (55469) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 17 15
+[0;31mE (56529) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (56529) esp-tls: create_ssl_handle failed[0m
+[0;31mE (56529) esp-tls: Failed to open new connection[0m
+[0;31mE (56529) transport_base: Failed to open a new connection[0m
+[0;31mE (56539) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (56549) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (56549) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 17 15
+[0;31mE (62569) esp-tls: [sock=60] select() timeout[0m
+[0;31mE (62569) esp-tls: Failed to open new connection[0m
+[0;31mE (62569) transport_base: Failed to open a new connection[0m
+[0;31mE (62569) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (62579) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (62579) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 17 15
+[0;31mE (63589) transport_base: Failed to initialize new connection object[0m
+[0;31mE (63589) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (63589) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (63599) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+GPIO[21] intr, val: 1
+Time diff: 24
+ADICIONEI NA VOTACAO 1, TOTAL: 16
+
+Total 1: 17, 2: 16
+[0;31mE (64599) HTTP_CLIENT: Allocation failed[0m
+Buffer: 0 17 16
+Guru Meditation Error: Core  0 panic'ed (StoreProhibited). Exception was unhandled.
+
+Core  0 register dump:
+PC      : 0x401692ff  PS      : 0x00060630  A0      : 0x800d7f26  A1      : 0x3ffc51d0  
+A2      : 0x00000000  A3      : 0x00000002  A4      : 0x000000a0  A5      : 0x00000011  
+A6      : 0x00000010  A7      : 0x00000008  A8      : 0x80156f48  A9      : 0x3ffc4e80  
+A10     : 0x00000010  A11     : 0xffffffff  A12     : 0x00000010  A13     : 0x3ffc5090  
+A14     : 0x3ffc4e90  A15     : 0x00000001  SAR     : 0x00000004  EXCCAUSE: 0x0000001d  
+EXCVADDR: 0x0000006c  LBEG    : 0x400014fd  LEND    : 0x4000150d  LCOUNT  : 0xfffffffd  
+
+
+Backtrace: 0x401692fc:0x3ffc51d0 0x400d7f23:0x3ffc51f0 0x400d7f95:0x3ffc52c0 0x4008be05:0x3ffc52e0
+
+
+
+
+ELF file SHA256: c750fa3364e1eadb
+
+Rebooting...
+ets Jun  8 2016 00:22:57
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7128
+load:0x40078000,len:15616
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (30) boot: ESP-IDF v5.1.2-602-gdb1e54a0c5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 22 2024 18:05:58[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (37) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (78) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (93) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25ef4h (155380) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00035f1c vaddr=3ffb0000 size=042e4h ( 17124) load[0m
+[0;32mI (169) esp_image: segment 2: paddr=0003a208 vaddr=40080000 size=05e10h ( 24080) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1d38h (662840) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e1d60 vaddr=40085e10 size=10310h ( 66320) load[0m
+[0;32mI (457) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (457) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu up.[0m
+[0;32mI (469) cpu_start: Starting app cpu, entry point is 0x4008139c[0m
+[0;32mI (457) cpu_start: App cpu up.[0m
+[0;32mI (487) cpu_start: Pro cpu start user code[0m
+[0;32mI (487) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (487) cpu_start: Application information:[0m
+[0;32mI (492) cpu_start: Project name:     projetao[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (502) cpu_start: Compile time:     Feb 22 2024 18:40:09[0m
+[0;32mI (508) cpu_start: ELF file SHA256:  c750fa3364e1eadb...[0m
+[0;32mI (514) cpu_start: ESP-IDF:          v5.1.2-602-gdb1e54a0c5[0m
+[0;32mI (520) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (525) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (542) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFB8A70 len 00027590 (157 KiB): DRAM[0m
+[0;32mI (554) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (567) heap_init: At 40096120 len 00009EE0 (39 KiB): IRAM[0m
+[0;32mI (574) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;33mW (581) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (595) app_start: Starting scheduler on CPU0[0m
+[0;32mI (600) app_start: Starting scheduler on CPU1[0m
+[0;32mI (600) main_task: Started on CPU0[0m
+[0;32mI (610) main_task: Calling app_main()[0m
+[0;32mI (640) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (640) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (650) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+a
+[0;32mI (660) main_task: Returned from app_main()[0m
+I (670) wifi:wifi driver task: 3ffc28b4, prio:23, stack:6656, core=0
+I (690) wifi:wifi firmware version: e309346
+I (690) wifi:wifi certification version: v7.0
+I (690) wifi:config NVS flash: enabled
+I (690) wifi:config nano formating: disabled
+I (700) wifi:Init data frame dynamic rx buffer num: 32
+I (700) wifi:Init static rx mgmt buffer num: 5
+I (700) wifi:Init management short buffer num: 32
+I (710) wifi:Init dynamic tx buffer num: 32
+I (710) wifi:Init static rx buffer size: 1600
+I (720) wifi:Init static rx buffer num: 10
+I (720) wifi:Init dynamic rx buffer num: 32
+[0;32mI (730) wifi_init: rx ba win: 6[0m
+[0;32mI (730) wifi_init: tcpip mbox: 32[0m
+[0;32mI (730) wifi_init: udp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp tx win: 5760[0m
+[0;32mI (740) wifi_init: tcp rx win: 5760[0m
+[0;32mI (750) wifi_init: tcp mss: 1440[0m
+[0;32mI (750) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (760) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (760) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (850) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (850) wifi:enable tsf
+a
+a
+[0;32mI (3350) WIFI: Wifi encontrado: Karen
+[0m
+[0;32mI (3350) WIFI: Melhor Sinal: Karen
+[0m
+E (3350) wifi:NAN WiFi stop
+I (3350) wifi:flush txq
+I (3350) wifi:stop sw txq
+I (3350) wifi:lmac stop hw txq
+I (3360) wifi:Deinit lldesc rx mblock:10
+I (3380) wifi:wifi driver task: 3ffc09f0, prio:23, stack:6656, core=0
+I (3390) wifi:wifi firmware version: e309346
+I (3390) wifi:wifi certification version: v7.0
+I (3390) wifi:config NVS flash: enabled
+I (3400) wifi:config nano formating: disabled
+I (3400) wifi:Init data frame dynamic rx buffer num: 32
+I (3400) wifi:Init static rx mgmt buffer num: 5
+I (3410) wifi:Init management short buffer num: 32
+I (3410) wifi:Init dynamic tx buffer num: 32
+I (3420) wifi:Init static rx buffer size: 1600
+I (3420) wifi:Init static rx buffer num: 10
+I (3430) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3430) wifi_init: rx ba win: 6[0m
+[0;32mI (3430) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3440) wifi_init: udp mbox: 6[0m
+[0;32mI (3440) wifi_init: tcp mbox: 6[0m
+[0;32mI (3440) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3450) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3450) wifi_init: tcp mss: 1440[0m
+[0;32mI (3460) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3460) wifi_init: WiFi RX IRAM OP enabled[0m
+I (3470) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (3470) wifi:enable tsf
+[0;32mI (3470) WIFI: SSID: Karen
+[0m
+[0;32mI (3480) WIFI: PASSWORD: z3klrlip
+[0m
+[0;32mI (3480) WIFI: esp_wifi_connect log: ESP_OK
+[0m
+[0;32mI (3480) WIFI: wifi_init_sta finished.
+[0m
+I (3490) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3500) wifi:state: init -> auth (b0)
+I (3510) wifi:state: auth -> assoc (0)
+I (3530) wifi:state: assoc -> run (10)
+I (3560) wifi:connected with Karen, aid = 3, channel 1, BW20, bssid = 24:fd:0d:cb:f8:7a
+I (3560) wifi:security: WPA2-PSK, phy: bgn, rssi: -69
+I (3560) wifi:pm start, type: 1
+
+I (3560) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+a
+I (3690) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (4070) wifi:<ba-add>idx:0 (ifx:0, 24:fd:0d:cb:f8:7a), tid:0, ssn:4, winSize:64
+[0;32mI (4570) esp_netif_handlers: sta ip: 10.0.0.101, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (4570) WIFI: got ip: 10.0.0.101[0m
+[0;32mI (4570) WIFI: connected to ap SSID:Karen password:z3klrlip[0m
+a
+b
+[0;32mI (4660) WIFI: BEFORE -The current date/time: Wed Feb 28 23:17:16 2024[0m
+[0;32mI (4660) WIFI: The current date/time: Wed Feb 28 20:17:16 2024[0m
+[0;32mI (5660) WIFI: Deleting SNTP task
+[0m
+GPIO[21] intr, val: 1
+Time diff: 9
+ADICIONEI NA VOTACAO 1, TOTAL: 1
+
+Total 1: 0, 2: 1
+GPIO[21] intr, val: 0
+Time diff: 11
+ADICIONEI NA VOTACAO 1, TOTAL: 2
+
+Total 1: 0, 2: 2
+Buffer: 0 0 2
+[0;32mI (13570) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (13580) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+GPIO[21] intr, val: 1
+Time diff: 12
+ADICIONEI NA VOTACAO 1, TOTAL: 3
+
+Total 1: 0, 2: 3
+[0;32mI (14660) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:17:26 GMT[0m
+[0;32mI (14660) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (14670) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (14670) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (14680) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc617ffc93019d-GRU[0m
+[0;32mI (14690) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (14700) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (14710) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (14720) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (14720) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=301809d7-4683-408e[0m
+[0;32mI (14730) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (14740) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (14750) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (14760) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (14760) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (14770) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (14770) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+GPIO[21] intr, val: 0
+Time diff: 14
+ADICIONEI NA VOTACAO 1, TOTAL: 4
+
+Total 1: 0, 2: 4
+Buffer: 0 0 4
+GPIO[21] intr, val: 1
+Time diff: 15
+ADICIONEI NA VOTACAO 1, TOTAL: 5
+
+Total 1: 0, 2: 5
+[0;32mI (16750) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (16760) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m

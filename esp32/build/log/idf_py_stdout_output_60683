@@ -1,0 +1,323 @@
+[0;32mI �ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7128
+load:0x40078000,len:15616
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-602-gdb1e54a0c5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 22 2024 18:05:58[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25f5ch (155484) map[0m
+[0;32mI (161) esp_image: segment 1: paddr=00035f84 vaddr=3ffb0000 size=042e4h ( 17124) load[0m
+[0;32mI (168) esp_image: segment 2: paddr=0003a270 vaddr=40080000 size=05da8h ( 23976) load[0m
+[0;32mI (178) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=a1d9ch (662940) map[0m
+[0;32mI (418) esp_image: segment 4: paddr=000e1dc4 vaddr=40085da8 size=10378h ( 66424) load[0m
+[0;32mI (457) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (457) boot: Disabling RNG early entropy source...[0m
+[0;32mI (469) cpu_start: Multicore app[0m
+[0;32mI (469) cpu_start: Pro cpu up.[0m
+[0;32mI (469) cpu_start: Starting app cpu, entry point is 0x4008139c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (487) cpu_start: Pro cpu start user code[0m
+[0;32mI (487) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (487) cpu_start: Application information:[0m
+[0;32mI (492) cpu_start: Project name:     projetao[0m
+[0;32mI (497) cpu_start: App version:      1[0m
+[0;32mI (501) cpu_start: Compile time:     Feb 22 2024 18:40:09[0m
+[0;32mI (507) cpu_start: ELF file SHA256:  0a88963469cbdd96...[0m
+[0;32mI (513) cpu_start: ESP-IDF:          v5.1.2-602-gdb1e54a0c5[0m
+[0;32mI (520) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (524) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (529) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (534) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (541) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (547) heap_init: At 3FFB8A70 len 00027590 (157 KiB): DRAM[0m
+[0;32mI (553) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (560) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (566) heap_init: At 40096120 len 00009EE0 (39 KiB): IRAM[0m
+[0;32mI (574) spi_flash: detected chip: generic[0m
+[0;32mI (577) spi_flash: flash io: dio[0m
+[0;33mW (581) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (595) app_start: Starting scheduler on CPU0[0m
+[0;32mI (599) app_start: Starting scheduler on CPU1[0m
+[0;32mI (599) main_task: Started on CPU0[0m
+[0;32mI (609) main_task: Calling app_main()[0m
+[0;32mI (639) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (639) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (649) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+a
+[0;32mI (659) main_task: Returned from app_main()[0m
+I (669) wifi:wifi driver task: 3ffc28b4, prio:23, stack:6656, core=0
+I (689) wifi:wifi firmware version: e309346
+I (689) wifi:wifi certification version: v7.0
+I (689) wifi:config NVS flash: enabled
+I (689) wifi:config nano formating: disabled
+I (699) wifi:Init data frame dynamic rx buffer num: 32
+I (699) wifi:Init static rx mgmt buffer num: 5
+I (699) wifi:Init management short buffer num: 32
+I (709) wifi:Init dynamic tx buffer num: 32
+I (709) wifi:Init static rx buffer size: 1600
+I (719) wifi:Init static rx buffer num: 10
+I (719) wifi:Init dynamic rx buffer num: 32
+[0;32mI (729) wifi_init: rx ba win: 6[0m
+[0;32mI (729) wifi_init: tcpip mbox: 32[0m
+[0;32mI (729) wifi_init: udp mbox: 6[0m
+[0;32mI (739) wifi_init: tcp mbox: 6[0m
+[0;32mI (739) wifi_init: tcp tx win: 5760[0m
+[0;32mI (739) wifi_init: tcp rx win: 5760[0m
+[0;32mI (749) wifi_init: tcp mss: 1440[0m
+[0;32mI (749) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (759) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (759) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (849) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (849) wifi:enable tsf
+a
+a
+[0;32mI (3349) WIFI: Wifi encontrado: Karen
+[0m
+[0;32mI (3349) WIFI: Melhor Sinal: Karen
+[0m
+E (3349) wifi:NAN WiFi stop
+I (3349) wifi:flush txq
+I (3349) wifi:stop sw txq
+I (3349) wifi:lmac stop hw txq
+I (3359) wifi:Deinit lldesc rx mblock:10
+I (3379) wifi:wifi driver task: 3ffc2144, prio:23, stack:6656, core=0
+I (3389) wifi:wifi firmware version: e309346
+I (3389) wifi:wifi certification version: v7.0
+I (3389) wifi:config NVS flash: enabled
+I (3399) wifi:config nano formating: disabled
+I (3399) wifi:Init data frame dynamic rx buffer num: 32
+I (3399) wifi:Init static rx mgmt buffer num: 5
+I (3409) wifi:Init management short buffer num: 32
+I (3409) wifi:Init dynamic tx buffer num: 32
+I (3419) wifi:Init static rx buffer size: 1600
+I (3419) wifi:Init static rx buffer num: 10
+I (3429) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3429) wifi_init: rx ba win: 6[0m
+[0;32mI (3429) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3439) wifi_init: udp mbox: 6[0m
+[0;32mI (3439) wifi_init: tcp mbox: 6[0m
+[0;32mI (3439) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3449) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3449) wifi_init: tcp mss: 1440[0m
+[0;32mI (3459) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3459) wifi_init: WiFi RX IRAM OP enabled[0m
+I (3469) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (3469) wifi:enable tsf
+[0;32mI (3469) WIFI: SSID: Karen
+[0m
+[0;32mI (3479) WIFI: PASSWORD: z3klrlip
+[0m
+[0;32mI (3479) WIFI: wifi_init_sta finished.
+[0m
+I (3489) wifi:new:<3,1>, old:<1,0>, ap:<255,255>, sta:<3,1>, prof:1
+I (3489) wifi:state: init -> auth (b0)
+[0;32mI (3479) WIFI: esp_wifi_connect log: ESP_OK
+[0m
+I (3509) wifi:state: auth -> assoc (0)
+I (3519) wifi:state: assoc -> run (10)
+I (3539) wifi:connected with Karen, aid = 4, channel 3, 40U, bssid = 24:fd:0d:cb:f8:7a
+I (3539) wifi:security: WPA2-PSK, phy: bgn, rssi: -72
+I (3549) wifi:pm start, type: 1
+
+I (3549) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3559) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+a
+[0;32mI (4569) esp_netif_handlers: sta ip: 10.0.0.101, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (4569) WIFI: got ip: 10.0.0.101[0m
+[0;32mI (4569) WIFI: connected to ap SSID:Karen password:z3klrlip[0m
+a
+b
+[0;32mI (4659) WIFI: Time is not set yet. Connecting to network and getting time over NTP.[0m
+[0;32mI (4659) WIFI: Initializing SNTP[0m
+[0;32mI (4659) WIFI: Waiting for system time to be set... (1/10)[0m
+I (6319) wifi:<ba-add>idx:0 (ifx:0, 24:fd:0d:cb:f8:7a), tid:0, ssn:4, winSize:64
+[0;32mI (6669) WIFI: Waiting for system time to be set... (2/10)[0m
+I (6779) wifi:[0;32mI (6779) WIFI: Notification of a time synchronization event[0m
+<ba-add>idx:1 (ifx:0, 24:fd:0d:cb:f8:7a), tid:5, ssn:0, winSize:64
+[0;32mI (8669) WIFI: BEFORE -The current date/time: Wed Feb 28 22:40:08 2024[0m
+[0;32mI (8669) WIFI: The current date/time: Wed Feb 28 19:40:08 2024[0m
+[0;32mI (9669) WIFI: Deleting SNTP task
+[0m
+[0;32mI (13639) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (13639) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (14619) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:40:14 GMT[0m
+[0;32mI (14619) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (14629) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (14639) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (14639) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2b062fe102eb-GRU[0m
+[0;32mI (14649) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (14659) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (14669) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"553-+VOl7eOw51uKbRcvMF/K430ZfBc"[0m
+[0;32mI (14679) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (14689) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=fe2ffea5-c270-40c0[0m
+[0;32mI (14689) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (14699) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (14709) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (14719) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (14729) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=64[0m
+[0;32mI (14729) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=512[0m
+[0;32mI (14739) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=345[0m
+[0;32mI (14739) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=442[0m
+[0;32mI (14749) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (14749) HTTP_CLIENT: HTTP GET Status = 200, content_length = -1[0m
+[0;32mI (14769) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (15429) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:40:15 GMT[0m
+[0;32mI (15429) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (15439) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (15449) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (15459) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2b0d29cd02eb-GRU[0m
+[0;32mI (15469) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (15469) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (15479) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"[0m
+[0;32mI (15489) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (15499) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=b4fd21a1-bbaf-415b[0m
+[0;32mI (15509) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (15509) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (15519) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (15529) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (15539) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=2[0m
+[0;32mI (15549) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (15549) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+[0;32mI (15559) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (36599) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (36599) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (37859) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:40:37 GMT[0m
+[0;32mI (37859) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (37869) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (37879) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (37889) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2b95ac34013a-GRU[0m
+[0;32mI (37889) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (37899) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (37909) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"553-+VOl7eOw51uKbRcvMF/K430ZfBc"[0m
+[0;32mI (37919) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (37929) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=97ec3cab-d4e4-4a16[0m
+[0;32mI (37939) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (37939) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (37949) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (37959) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (37969) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=64[0m
+[0;32mI (37969) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=512[0m
+[0;32mI (37979) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=345[0m
+[0;32mI (37989) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=442[0m
+[0;32mI (37989) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (37989) HTTP_CLIENT: HTTP GET Status = 200, content_length = -1[0m
+[0;32mI (38009) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (38679) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:40:38 GMT[0m
+[0;32mI (38679) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (38689) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (38699) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (38699) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2b9e7eaf013a-GRU[0m
+[0;32mI (38709) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (38719) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (38729) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"[0m
+[0;32mI (38739) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (38749) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=a8aec6ce-4954-4536[0m
+[0;32mI (38749) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (38759) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (38769) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (38779) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (38789) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=2[0m
+[0;32mI (38789) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (38799) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+[0;32mI (38799) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (59719) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (59719) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (60949) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:41:01 GMT[0m
+[0;32mI (60949) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (60959) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (60969) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (60969) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2c262f51a474-GRU[0m
+[0;32mI (60979) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (60989) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (60999) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"553-+VOl7eOw51uKbRcvMF/K430ZfBc"[0m
+[0;32mI (61009) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (61019) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=47d8f464-149c-4add[0m
+[0;32mI (61019) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (61029) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (61039) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (61049) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (61059) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=64[0m
+[0;32mI (61059) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=512[0m
+[0;32mI (61069) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=345[0m
+[0;32mI (61079) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=442[0m
+[0;32mI (61079) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (61079) HTTP_CLIENT: HTTP GET Status = 200, content_length = -1[0m
+[0;32mI (61099) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (61409) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:41:01 GMT[0m
+[0;32mI (61409) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (61419) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (61429) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (61439) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2c2ec83da474-GRU[0m
+[0;32mI (61439) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (61449) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (61459) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"[0m
+[0;32mI (61469) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (61479) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=a56b5dc1-cd6d-4d10[0m
+[0;32mI (61489) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (61489) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (61499) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (61509) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (61519) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=2[0m
+[0;32mI (61529) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (61529) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+[0;32mI (61529) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m
+[0;32mI (82549) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (82559) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (83749) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:41:23 GMT[0m
+[0;32mI (83749) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (83749) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (83759) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (83769) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2cb4dceba4b0-GRU[0m
+[0;32mI (83779) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (83789) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (83789) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"553-+VOl7eOw51uKbRcvMF/K430ZfBc"[0m
+[0;32mI (83799) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (83809) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=cd3afe43-de09-4a2b[0m
+[0;32mI (83819) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (83829) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (83839) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (83839) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (83849) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=64[0m
+[0;32mI (83859) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=512[0m
+[0;32mI (83859) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=345[0m
+[0;32mI (83869) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=442[0m
+[0;32mI (83879) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (83879) HTTP_CLIENT: HTTP GET Status = 200, content_length = -1[0m
+[0;32mI (83889) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (84559) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 22:41:24 GMT[0m
+[0;32mI (84559) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=application/json; charset=utf-8[0m
+[0;32mI (84569) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (84579) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (84579) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc2cbd3c97a4b0-GRU[0m
+[0;32mI (84589) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (84599) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (84609) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"2-vyGp6PvFo4RvsFtPoIWeCReyIC8"[0m
+[0;32mI (84619) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (84619) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=f73561e3-6536-41d2[0m
+[0;32mI (84629) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (84639) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (84649) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (84659) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (84669) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=2[0m
+[0;32mI (84669) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (84679) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+[0;32mI (84679) HTTP_CLIENT: HTTP_EVENT_DISCONNECTED[0m

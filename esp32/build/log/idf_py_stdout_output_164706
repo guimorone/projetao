@@ -1,0 +1,720 @@
+000356bc vaddr=3ffbets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7128
+load:0x40078000,len:15616
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (30) boot: ESP-IDF v5.1.2-602-gdb1e54a0c5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 22 2024 18:05:58[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25694h (153236) map[0m
+[0;32mI (160) esp_image: segment 1: paddr=000356bc vaddr=3ffb0000 size=04274h ( 17012) load[0m
+[0;32mI (167) esp_image: segment 2: paddr=00039938 vaddr=40080000 size=066e0h ( 26336) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9d3a8h (644008) map[0m
+[0;32mI (411) esp_image: segment 4: paddr=000dd3d0 vaddr=400866e0 size=0fa18h ( 64024) load[0m
+[0;32mI (449) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (449) boot: Disabling RNG early entropy source...[0m
+[0;32mI (461) cpu_start: Multicore app[0m
+[0;32mI (461) cpu_start: Pro cpu up.[0m
+[0;32mI (461) cpu_start: Starting app cpu, entry point is 0x4008139c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (479) cpu_start: Pro cpu start user code[0m
+[0;32mI (479) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (479) cpu_start: Application information:[0m
+[0;32mI (484) cpu_start: Project name:     projetao[0m
+[0;32mI (489) cpu_start: App version:      1[0m
+[0;32mI (493) cpu_start: Compile time:     Feb 22 2024 18:40:09[0m
+[0;32mI (500) cpu_start: ELF file SHA256:  3e773b1160b9afa3...[0m
+[0;32mI (505) cpu_start: ESP-IDF:          v5.1.2-602-gdb1e54a0c5[0m
+[0;32mI (512) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (516) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (521) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (526) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (533) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (539) heap_init: At 3FFB8928 len 000276D8 (157 KiB): DRAM[0m
+[0;32mI (546) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (552) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (558) heap_init: At 400960F8 len 00009F08 (39 KiB): IRAM[0m
+[0;32mI (566) spi_flash: detected chip: generic[0m
+[0;32mI (569) spi_flash: flash io: dio[0m
+[0;33mW (573) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (587) app_start: Starting scheduler on CPU0[0m
+[0;32mI (591) app_start: Starting scheduler on CPU1[0m
+[0;32mI (591) main_task: Started on CPU0[0m
+[0;32mI (601) main_task: Calling app_main()[0m
+[0;32mI (631) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (631) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (641) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (651) main_task: Returned from app_main()[0m
+I (661) wifi:wifi driver task: 3ffc276c, prio:23, stack:6656, core=0
+GPIO[21] intr, val: 0
+Time diff: 0
+Total 1: 0, 2: 0
+I (681) wifi:wifi firmware version: e309346
+I (681) wifi:wifi certification version: v7.0
+I (681) wifi:config NVS flash: enabled
+I (681) wifi:config nano formating: disabled
+I (691) wifi:Init data frame dynamic rx buffer num: 32
+I (691) wifi:Init static rx mgmt buffer num: 5
+I (701) wifi:Init management short buffer num: 32
+I (701) wifi:Init dynamic tx buffer num: 32
+I (711) wifi:Init static rx buffer size: 1600
+I (711) wifi:Init static rx buffer num: 10
+I (711) wifi:Init dynamic rx buffer num: 32
+[0;32mI (721) wifi_init: rx ba win: 6[0m
+[0;32mI (721) wifi_init: tcpip mbox: 32[0m
+[0;32mI (731) wifi_init: udp mbox: 6[0m
+[0;32mI (731) wifi_init: tcp mbox: 6[0m
+[0;32mI (731) wifi_init: tcp tx win: 5760[0m
+[0;32mI (741) wifi_init: tcp rx win: 5760[0m
+[0;32mI (741) wifi_init: tcp mss: 1440[0m
+[0;32mI (751) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (751) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (761) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (841) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (841) wifi:enable tsf
+GPIO[21] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 1
+
+Total 1: 0, 2: 1
+GPIO[21] intr, val: 0
+Time diff: 2
+ADICIONEI NA VOTACAO 1, TOTAL: 2
+
+Total 1: 0, 2: 2
+[0;32mI (3351) WIFI: Wifi encontrado: Karen
+[0m
+[0;32mI (3351) WIFI: Melhor Sinal: Karen
+[0m
+E (3351) wifi:NAN WiFi stop
+I (3351) wifi:flush txq
+I (3351) wifi:stop sw txq
+I (3351) wifi:lmac stop hw txq
+I (3361) wifi:Deinit lldesc rx mblock:10
+I (3381) wifi:wifi driver task: 3ffc1ffc, prio:23, stack:6656, core=0
+I (3391) wifi:wifi firmware version: e309346
+I (3391) wifi:wifi certification version: v7.0
+I (3391) wifi:config NVS flash: enabled
+I (3401) wifi:config nano formating: disabled
+I (3401) wifi:Init data frame dynamic rx buffer num: 32
+I (3401) wifi:Init static rx mgmt buffer num: 5
+I (3411) wifi:Init management short buffer num: 32
+I (3411) wifi:Init dynamic tx buffer num: 32
+I (3421) wifi:Init static rx buffer size: 1600
+I (3421) wifi:Init static rx buffer num: 10
+I (3431) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3431) wifi_init: rx ba win: 6[0m
+[0;32mI (3431) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3441) wifi_init: udp mbox: 6[0m
+[0;32mI (3441) wifi_init: tcp mbox: 6[0m
+[0;32mI (3441) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3451) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3451) wifi_init: tcp mss: 1440[0m
+[0;32mI (3461) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3461) wifi_init: WiFi RX IRAM OP enabled[0m
+I (3471) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (3471) wifi:enable tsf
+[0;32mI (3471) WIFI: SSID: Karen
+[0m
+[0;32mI (3481) WIFI: PASSWORD: z3klrlip
+[0m
+[0;32mI (3481) WIFI: esp_wifi_connect log: ESP_OK
+[0m
+I (3491) wifi:[0;32mI (3481) WIFI: wifi_init_sta finished.
+[0m
+new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (3501) wifi:state: init -> auth (b0)
+I (3511) wifi:state: auth -> assoc (0)
+I (3531) wifi:state: assoc -> run (10)
+I (3551) wifi:connected with Karen, aid = 3, channel 1, BW20, bssid = 24:fd:0d:cb:f8:7a
+I (3551) wifi:security: WPA2-PSK, phy: bgn, rssi: -63
+I (3561) wifi:pm start, type: 1
+
+I (3561) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3581) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (5061) esp_netif_handlers: sta ip: 10.0.0.101, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (5061) WIFI: got ip: 10.0.0.101[0m
+[0;32mI (5061) WIFI: connected to ap SSID:Karen password:z3klrlip[0m
+I (5221) wifi:<ba-add>idx:0 (ifx:0, 24:fd:0d:cb:f8:7a), tid:0, ssn:4, winSize:64
+GPIO[21] intr, val: 1
+Time diff: 7
+ADICIONEI NA VOTACAO 1, TOTAL: 3
+
+Total 1: 0, 2: 3
+GPIO[21] intr, val: 0
+Time diff: 7
+Total 1: 0, 2: 3
+GPIO[21] intr, val: 1
+Time diff: 7
+Total 1: 0, 2: 3
+GPIO[21] intr, val: 0
+Time diff: 7
+Total 1: 0, 2: 3
+GPIO[21] intr, val: 1
+Time diff: 8
+ADICIONEI NA VOTACAO 1, TOTAL: 4
+
+Total 1: 0, 2: 4
+GPIO[21] intr, val: 0
+Time diff: 8
+Total 1: 0, 2: 4
+GPIO[21] intr, val: 1
+Time diff: 9
+ADICIONEI NA VOTACAO 1, TOTAL: 5
+
+Total 1: 0, 2: 5
+GPIO[21] intr, val: 0
+Time diff: 9
+Total 1: 0, 2: 5
+GPIO[21] intr, val: 1
+Time diff: 9
+Total 1: 0, 2: 5
+GPIO[21] intr, val: 0
+Time diff: 9
+Total 1: 0, 2: 5
+GPIO[21] intr, val: 1
+Time diff: 9
+Total 1: 0, 2: 5
+GPIO[21] intr, val: 0
+Time diff: 9
+Total 1: 0, 2: 5
+GPIO[21] intr, val: 1
+Time diff: 9
+Total 1: 0, 2: 5
+GPIO[21] intr, val: 0
+Time diff: 9
+Total 1: 0, 2: 5
+GPIO[22] intr, val: 1
+Time diff: 11
+ADICIONEI NA VOTACAO 1, TOTAL: 1
+
+Total 1: 1, 2: 5
+Buffer: 0 1 5
+GPIO[22] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 2
+
+Total 1: 2, 2: 5
+GPIO[22] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 6
+
+Total 1: 2, 2: 6
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 2, 2: 6
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 3
+
+Total 1: 3, 2: 6
+[0;32mI (13671) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (13671) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 7
+
+Total 1: 3, 2: 7
+[0;32mI (15051) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:19:19 GMT[0m
+[0;32mI (15051) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (15061) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (15071) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (15081) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc6440087f01a2-GRU[0m
+[0;32mI (15081) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (15091) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (15101) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (15111) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (15121) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=c07049e8-46f1-47dd[0m
+[0;32mI (15131) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (15131) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (15141) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (15151) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (15161) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (15171) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (15171) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 4
+
+Total 1: 4, 2: 7
+GPIO[23] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 8
+
+Total 1: 4, 2: 8
+GPIO[23] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 5
+
+Total 1: 5, 2: 8
+GPIO[23] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 9
+
+Total 1: 5, 2: 9
+GPIO[23] intr, val: 1
+Time diff: 0
+Total 1: 5, 2: 9
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 5, 2: 9
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 6
+
+Total 1: 6, 2: 9
+GPIO[22] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 7
+
+Total 1: 7, 2: 9
+GPIO[22] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 10
+
+Total 1: 7, 2: 10
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 7, 2: 10
+GPIO[22] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 8
+
+Total 1: 8, 2: 10
+GPIO[21] intr, val: 1
+Time diff: 2
+ADICIONEI NA VOTACAO 1, TOTAL: 11
+
+Total 1: 8, 2: 11
+GPIO[21] intr, val: 0
+Time diff: 3
+ADICIONEI NA VOTACAO 1, TOTAL: 12
+
+Total 1: 8, 2: 12
+GPIO[21] intr, val: 0
+Time diff: 3
+Total 1: 8, 2: 12
+GPIO[21] intr, val: 1
+Time diff: 4
+ADICIONEI NA VOTACAO 1, TOTAL: 13
+
+Total 1: 8, 2: 13
+GPIO[22] intr, val: 1
+Time diff: 5
+ADICIONEI NA VOTACAO 1, TOTAL: 9
+
+Total 1: 9, 2: 13
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 14
+
+Total 1: 9, 2: 14
+GPIO[21] intr, val: 0
+Time diff: 0
+Total 1: 9, 2: 14
+GPIO[21] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 15
+
+Total 1: 9, 2: 15
+GPIO[21] intr, val: 0
+Time diff: 1
+Total 1: 9, 2: 15
+Buffer: 0 9 15
+[0;32mI (26161) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (26171) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (27241) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:19:31 GMT[0m
+[0;32mI (27241) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (27251) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (27261) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (27261) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc648e2ade1cf9-GRU[0m
+[0;32mI (27271) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (27281) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (27291) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (27301) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (27311) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=79bd2f99-630f-4674[0m
+[0;32mI (27311) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (27321) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (27331) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (27341) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (27351) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (27351) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (27361) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+GPIO[21] intr, val: 1
+Time diff: 9
+ADICIONEI NA VOTACAO 1, TOTAL: 16
+
+Total 1: 9, 2: 16
+GPIO[21] intr, val: 0
+Time diff: 9
+Total 1: 9, 2: 16
+GPIO[22] intr, val: 1
+Time diff: 10
+ADICIONEI NA VOTACAO 1, TOTAL: 10
+
+Total 1: 10, 2: 16
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 17
+
+Total 1: 10, 2: 17
+GPIO[23] intr, val: 1
+Time diff: 0
+Total 1: 10, 2: 17
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 10, 2: 17
+GPIO[23] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 11
+
+Total 1: 11, 2: 17
+GPIO[23] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 18
+
+Total 1: 11, 2: 18
+GPIO[23] intr, val: 0
+Time diff: 0
+Total 1: 11, 2: 18
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 12
+
+Total 1: 12, 2: 18
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 19
+
+Total 1: 12, 2: 19
+GPIO[22] intr, val: 1
+Time diff: 0
+Total 1: 12, 2: 19
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 13
+
+Total 1: 13, 2: 19
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 20
+
+Total 1: 13, 2: 20
+GPIO[22] intr, val: 1
+Time diff: 0
+Total 1: 13, 2: 20
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 13, 2: 20
+Buffer: 0 13 20
+GPIO[21] intr, val: 0
+Time diff: 0
+Total 1: 13, 2: 20
+GPIO[21] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 21
+
+Total 1: 13, 2: 21
+GPIO[21] intr, val: 1
+Time diff: 1
+Total 1: 13, 2: 21
+GPIO[21] intr, val: 0
+Time diff: 1
+Total 1: 13, 2: 21
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 14
+
+Total 1: 14, 2: 21
+[0;32mI (38351) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (38361) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+GPIO[22] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 15
+
+Total 1: 15, 2: 21
+GPIO[22] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 22
+
+Total 1: 15, 2: 22
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 15, 2: 22
+GPIO[21] intr, val: 1
+Time diff: 0
+Total 1: 15, 2: 22
+GPIO[21] intr, val: 0
+Time diff: 0
+Total 1: 15, 2: 22
+GPIO[22] intr, val: 1
+Time diff: 0
+Total 1: 15, 2: 22
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 15, 2: 22
+[0;32mI (39831) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:19:43 GMT[0m
+[0;32mI (39841) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (39841) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (39851) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (39861) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc64da5dab1d07-GRU[0m
+[0;32mI (39871) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (39871) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (39881) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (39891) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (39901) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=ea9b5429-2615-4e52[0m
+[0;32mI (39911) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (39921) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (39921) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (39931) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (39941) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (39951) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (39951) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+GPIO[21] intr, val: 0
+Time diff: 6
+ADICIONEI NA VOTACAO 1, TOTAL: 23
+
+Total 1: 15, 2: 23
+GPIO[21] intr, val: 1
+Time diff: 6
+Total 1: 15, 2: 23
+GPIO[21] intr, val: 0
+Time diff: 7
+ADICIONEI NA VOTACAO 1, TOTAL: 24
+
+Total 1: 15, 2: 24
+GPIO[22] intr, val: 1
+Time diff: 7
+ADICIONEI NA VOTACAO 1, TOTAL: 16
+
+Total 1: 16, 2: 24
+GPIO[22] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 17
+
+Total 1: 17, 2: 24
+GPIO[22] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 25
+
+Total 1: 17, 2: 25
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 17, 2: 25
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 18
+
+Total 1: 18, 2: 25
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 19
+
+Total 1: 19, 2: 25
+GPIO[22] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 20
+
+Total 1: 20, 2: 25
+GPIO[22] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 26
+
+Total 1: 20, 2: 26
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 20, 2: 26
+Buffer: 0 20 26
+[0;32mI (50941) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (50941) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (52021) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:19:56 GMT[0m
+[0;32mI (52021) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (52031) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (52041) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (52051) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc6528f9fea4c0-GRU[0m
+[0;32mI (52051) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (52061) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (52071) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (52081) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (52091) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=e8bc4bee-8f33-43e5[0m
+[0;32mI (52101) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (52101) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (52111) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (52121) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (52131) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (52141) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (52141) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+Buffer: 0 20 26
+[0;32mI (63131) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (63131) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (64111) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:20:08 GMT[0m
+[0;32mI (64111) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (64121) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (64121) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (64131) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc65752c3303e5-GRU[0m
+[0;32mI (64141) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (64151) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (64161) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (64171) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (64171) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=977d06fc-0411-46ed[0m
+[0;32mI (64181) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (64191) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (64201) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (64211) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (64211) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (64221) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (64221) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+GPIO[21] intr, val: 0
+Time diff: 19
+ADICIONEI NA VOTACAO 1, TOTAL: 27
+
+Total 1: 20, 2: 27
+GPIO[21] intr, val: 0
+Time diff: 19
+Total 1: 20, 2: 27
+Buffer: 0 20 27
+[0;32mI (75211) HTTP_CLIENT: HTTP_EVENT_ON_CONNECTED[0m
+[0;32mI (75221) HTTP_CLIENT: HTTP_EVENT_HEADER_SENT[0m
+[0;32mI (76391) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Date, value=Wed, 28 Feb 2024 23:20:20 GMT[0m
+[0;32mI (76391) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Content-Type, value=text/html; charset=utf-8[0m
+[0;32mI (76401) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Transfer-Encoding, value=chunked[0m
+[0;32mI (76411) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Connection, value=keep-alive[0m
+[0;32mI (76421) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Ray, value=85cc65c0a9e91cef-GRU[0m
+[0;32mI (76421) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=CF-Cache-Status, value=DYNAMIC[0m
+[0;32mI (76431) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Access-Control-Allow-Origin, value=*[0m
+[0;32mI (76441) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=ETag, value=W/"24-JE6QI0KetHl91Rez79mDn2538Gs"[0m
+[0;32mI (76451) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Vary, value=Accept-Encoding[0m
+[0;32mI (76461) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=rndr-id, value=0c63a4bf-8519-45a6[0m
+[0;32mI (76471) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-powered-by, value=Express[0m
+[0;32mI (76471) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=x-render-origin-server, value=Render[0m
+[0;32mI (76481) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=Server, value=cloudflare[0m
+[0;32mI (76491) HTTP_CLIENT: HTTP_EVENT_ON_HEADER, key=alt-svc, value=h3=":443"; ma=86400[0m
+[0;32mI (76501) HTTP_CLIENT: HTTP_EVENT_ON_DATA, len=36[0m
+[0;32mI (76511) HTTP_CLIENT: HTTP_EVENT_ON_FINISH[0m
+[0;32mI (76511) HTTP_CLIENT: HTTP PUT Status = 200, content_length = -1[0m
+GPIO[22] intr, val: 1
+Time diff: 27
+ADICIONEI NA VOTACAO 1, TOTAL: 21
+
+Total 1: 21, 2: 27
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 28
+
+Total 1: 21, 2: 28
+GPIO[22] intr, val: 1
+Time diff: 0
+Total 1: 21, 2: 28
+GPIO[22] intr, val: 0
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 22
+
+Total 1: 22, 2: 28
+GPIO[22] intr, val: 1
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 29
+
+Total 1: 22, 2: 29
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 22, 2: 29
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 23
+
+Total 1: 23, 2: 29
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 30
+
+Total 1: 23, 2: 30
+GPIO[22] intr, val: 1
+Time diff: 0
+Total 1: 23, 2: 30
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 23, 2: 30
+GPIO[22] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 24
+
+Total 1: 24, 2: 30
+GPIO[22] intr, val: 0
+Time diff: 0
+ADICIONEI NA VOTACAO 1, TOTAL: 31
+
+Total 1: 24, 2: 31
+GPIO[22] intr, val: 1
+Time diff: 0
+Total 1: 24, 2: 31
+GPIO[22] intr, val: 0
+Time diff: 0
+Total 1: 24, 2: 31
+GPIO[21] intr, val: 1
+Time diff: 1
+ADICIONEI NA VOTACAO 1, TOTAL: 32
+
+Total 1: 24, 2: 32
+GPIO[21] intr, val: 0
+Time diff: 2
+ADICIONEI NA VOTACAO 1, TOTAL: 33
+
+Total 1: 24, 2: 33
+Buffer: 0 24 33
+[0;31mE (86571) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x5180[0m
+[0;31mE (86571) esp-tls: create_ssl_handle failed[0m
+[0;31mE (86571) esp-tls: Failed to open new connection[0m
+[0;31mE (86581) transport_base: Failed to open a new connection[0m
+[0;31mE (86591) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (86591) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (86591) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 24 33
+[0;31mE (96651) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (96651) esp-tls: create_ssl_handle failed[0m
+[0;31mE (96651) esp-tls: Failed to open new connection[0m
+[0;31mE (96661) transport_base: Failed to open a new connection[0m
+[0;31mE (96671) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (96671) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (96671) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 24 33
+[0;31mE (106751) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (106751) esp-tls: create_ssl_handle failed[0m
+[0;31mE (106751) esp-tls: Failed to open new connection[0m
+[0;31mE (106761) transport_base: Failed to open a new connection[0m
+[0;31mE (106761) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (106771) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (106771) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 24 33
+[0;31mE (116831) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (116841) esp-tls: create_ssl_handle failed[0m
+[0;31mE (116841) esp-tls: Failed to open new connection[0m
+[0;31mE (116841) transport_base: Failed to open a new connection[0m
+[0;31mE (116851) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (116851) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (116861) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m
+Buffer: 0 24 33
+[0;31mE (126911) esp-tls-mbedtls: mbedtls_ssl_setup returned -0x7F00[0m
+[0;31mE (126921) esp-tls: create_ssl_handle failed[0m
+[0;31mE (126921) esp-tls: Failed to open new connection[0m
+[0;31mE (126921) transport_base: Failed to open a new connection[0m
+[0;31mE (126931) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;32mI (126931) HTTP_CLIENT: HTTP_EVENT_ERROR[0m
+[0;31mE (126941) HTTP_CLIENT: HTTP PUT request failed: ESP_ERR_HTTP_CONNECT[0m

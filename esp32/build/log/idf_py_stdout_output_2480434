@@ -1,0 +1,435 @@
+b���m[0m
+[0;32mI�ets Jun  8 2016 00:22:57
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7128
+load:0x40078000,len:15616
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (30) boot: ESP-IDF v5.1.2-602-gdb1e54a0c5 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Feb 22 2024 18:05:58[0m
+[0;32mI (32) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v1.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (45) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (54) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (63) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (97) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=215d4h (136660) map[0m
+[0;32mI (154) esp_image: segment 1: paddr=000315fc vaddr=3ffb0000 size=04284h ( 17028) load[0m
+[0;32mI (161) esp_image: segment 2: paddr=00035888 vaddr=40080000 size=0a790h ( 42896) load[0m
+[0;32mI (179) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=8ba74h (572020) map[0m
+[0;32mI (386) esp_image: segment 4: paddr=000cba9c vaddr=4008a790 size=0b990h ( 47504) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (429) cpu_start: Multicore app[0m
+[0;32mI (429) cpu_start: Pro cpu up.[0m
+[0;32mI (429) cpu_start: Starting app cpu, entry point is 0x4008139c[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (447) cpu_start: Pro cpu start user code[0m
+[0;32mI (447) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (447) cpu_start: Application information:[0m
+[0;32mI (452) cpu_start: Project name:     projetao[0m
+[0;32mI (457) cpu_start: App version:      1[0m
+[0;32mI (461) cpu_start: Compile time:     Feb 22 2024 18:05:52[0m
+[0;32mI (468) cpu_start: ELF file SHA256:  05354b8d7cc12ec6...[0m
+[0;32mI (474) cpu_start: ESP-IDF:          v5.1.2-602-gdb1e54a0c5[0m
+[0;32mI (480) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (484) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (489) cpu_start: Chip rev:         v1.0[0m
+[0;32mI (494) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (501) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (507) heap_init: At 3FFB8900 len 00027700 (157 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (520) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 40096120 len 00009EE0 (39 KiB): IRAM[0m
+[0;32mI (534) spi_flash: detected chip: generic[0m
+[0;32mI (537) spi_flash: flash io: dio[0m
+[0;33mW (541) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (555) app_start: Starting scheduler on CPU0[0m
+[0;32mI (559) app_start: Starting scheduler on CPU1[0m
+[0;32mI (559) main_task: Started on CPU0[0m
+[0;32mI (569) main_task: Calling app_main()[0m
+[0;32mI (599) gpio: GPIO[21]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (599) gpio: GPIO[22]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+[0;32mI (609) gpio: GPIO[23]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:3 [0m
+a
+[0;31mE (619) example: DNS lookup failed err=202 res=0x0[0m
+I (629) wifi:wifi driver task: 3ffc2610, prio:23, stack:6656, core=0
+I (649) wifi:wifi firmware version: e309346
+I (649) wifi:wifi certification version: v7.0
+I (649) wifi:config NVS flash: enabled
+I (649) wifi:config nano formating: disabled
+I (659) wifi:Init data frame dynamic rx buffer num: 32
+I (659) wifi:Init static rx mgmt buffer num: 5
+I (659) wifi:Init management short buffer num: 32
+I (669) wifi:Init dynamic tx buffer num: 32
+I (669) wifi:Init static rx buffer size: 1600
+I (679) wifi:Init static rx buffer num: 10
+I (679) wifi:Init dynamic rx buffer num: 32
+[0;32mI (689) main_task: Returned from app_main()[0m
+[0;32mI (689) wifi_init: rx ba win: 6[0m
+[0;32mI (689) wifi_init: tcpip mbox: 32[0m
+[0;32mI (699) wifi_init: udp mbox: 6[0m
+[0;32mI (699) wifi_init: tcp mbox: 6[0m
+[0;32mI (699) wifi_init: tcp tx win: 5760[0m
+[0;32mI (709) wifi_init: tcp rx win: 5760[0m
+[0;32mI (709) wifi_init: tcp mss: 1440[0m
+[0;32mI (719) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (719) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (729) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (809) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (809) wifi:enable tsf
+a
+[0;31mE (1629) example: DNS lookup failed err=202 res=0x0[0m
+a
+[0;31mE (2629) example: DNS lookup failed err=202 res=0x0[0m
+[0;32mI (3319) WIFI: Wifi encontrado: Karen
+[0m
+[0;32mI (3319) WIFI: Melhor Sinal: Karen
+[0m
+E (3319) wifi:NAN WiFi stop
+I (3319) wifi:flush txq
+I (3319) wifi:stop sw txq
+I (3319) wifi:lmac stop hw txq
+I (3329) wifi:Deinit lldesc rx mblock:10
+I (3349) wifi:wifi driver task: 3ffba174, prio:23, stack:6656, core=0
+I (3359) wifi:wifi firmware version: e309346
+I (3359) wifi:wifi certification version: v7.0
+I (3369) wifi:config NVS flash: enabled
+I (3369) wifi:config nano formating: disabled
+I (3369) wifi:Init data frame dynamic rx buffer num: 32
+I (3369) wifi:Init static rx mgmt buffer num: 5
+I (3379) wifi:Init management short buffer num: 32
+I (3379) wifi:Init dynamic tx buffer num: 32
+I (3389) wifi:Init static rx buffer size: 1600
+I (3389) wifi:Init static rx buffer num: 10
+I (3399) wifi:Init dynamic rx buffer num: 32
+[0;32mI (3399) wifi_init: rx ba win: 6[0m
+[0;32mI (3399) wifi_init: tcpip mbox: 32[0m
+[0;32mI (3409) wifi_init: udp mbox: 6[0m
+[0;32mI (3409) wifi_init: tcp mbox: 6[0m
+[0;32mI (3409) wifi_init: tcp tx win: 5760[0m
+[0;32mI (3419) wifi_init: tcp rx win: 5760[0m
+[0;32mI (3419) wifi_init: tcp mss: 1440[0m
+[0;32mI (3429) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (3429) wifi_init: WiFi RX IRAM OP enabled[0m
+I (3439) wifi:mode : sta (30:c6:f7:00:1d:48)
+I (3439) wifi:enable tsf
+[0;32mI (3439) WIFI: SSID: Karen
+[0m
+[0;32mI (3449) WIFI: PASSWORD: z3klrlip
+[0m
+[0;32mI (3449) WIFI: esp_wifi_connect log: ESP_OK
+[0m
+I (3459) wifi:[0;32mI (3449) WIFI: wifi_init_sta finished.
+[0m
+new:<5,1>, old:<1,0>, ap:<255,255>, sta:<5,1>, prof:1
+I (3469) wifi:state: init -> auth (b0)
+I (3479) wifi:state: auth -> assoc (0)
+I (3489) wifi:state: assoc -> run (10)
+I (3519) wifi:connected with Karen, aid = 7, channel 5, 40U, bssid = 24:fd:0d:cb:f8:7a
+I (3519) wifi:security: WPA2-PSK, phy: bgn, rssi: -62
+I (3529) wifi:pm start, type: 1
+
+I (3529) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3589) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+a
+I (4209) wifi:<ba-add>idx:0 (ifx:0, 24:fd:0d:cb:f8:7a), tid:0, ssn:4, winSize:64
+[0;32mI (4539) esp_netif_handlers: sta ip: 10.0.0.101, mask: 255.255.255.0, gw: 10.0.0.1[0m
+[0;32mI (4539) WIFI: got ip: 10.0.0.101[0m
+[0;32mI (4539) WIFI: connected to ap SSID:Karen password:z3klrlip[0m
+a
+b
+[0;32mI (4619) WIFI: Time is not set yet. Connecting to network and getting time over NTP.[0m
+[0;32mI (4619) WIFI: Initializing SNTP[0m
+[0;32mI (4619) WIFI: Waiting for system time to be set... (1/10)[0m
+[0;32mI (4639) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (4639) example: ... allocated socket[0m
+[0;32mI (4689) example: ... connected[0m
+[0;32mI (4699) example: ... socket send success[0m
+[0;32mI (4699) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:12:41 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3a8bbea81ac2-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (5049) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (5059) example: 10... [0m
+[0;32mI (6059) example: 9... [0m
+[0;32mI (6629) WIFI: Waiting for system time to be set... (2/10)[0m
+[0;32mI (7059) example: 8... [0m
+[0;32mI (8059) example: 7... [0m
+[0;32mI (8629) WIFI: Waiting for system time to be set... (3/10)[0m
+[0;32mI (8999) WIFI: Notification of a time synchronization event[0m
+I (8999) wifi:<ba-add>idx:1 (ifx:0, 24:fd:0d:cb:f8:7a), tid:5, ssn:0, winSize:64
+[0;32mI (9059) example: 6... [0m
+[0;32mI (10059) example: 5... [0m
+[0;32mI (10629) WIFI: BEFORE -The current date/time: Thu Feb 22 21:12:47 2024[0m
+[0;32mI (10629) WIFI: The current date/time: Thu Feb 22 18:12:47 2024[0m
+[0;32mI (11059) example: 4... [0m
+[0;32mI (11629) WIFI: Deleting SNTP task
+[0m
+[0;32mI (12059) example: 3... [0m
+[0;32mI (13059) example: 2... [0m
+[0;32mI (14059) example: 1... [0m
+[0;32mI (15059) example: 0... [0m
+[0;32mI (16059) example: Starting again![0m
+[0;32mI (16059) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (16059) example: ... allocated socket[0m
+[0;32mI (16109) example: ... connected[0m
+[0;32mI (16109) example: ... socket send success[0m
+[0;32mI (16109) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:12:53 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3ad2fb981a96-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (16419) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (16429) example: 10... [0m
+[0;32mI (17429) example: 9... [0m
+[0;32mI (18429) example: 8... [0m
+[0;32mI (19429) example: 7... [0m
+[0;32mI (20429) example: 6... [0m
+[0;32mI (21429) example: 5... [0m
+[0;32mI (22429) example: 4... [0m
+[0;32mI (23429) example: 3... [0m
+[0;32mI (24429) example: 2... [0m
+[0;32mI (25429) example: 1... [0m
+[0;32mI (26429) example: 0... [0m
+[0;32mI (27429) example: Starting again![0m
+[0;32mI (27429) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (27429) example: ... allocated socket[0m
+[0;32mI (27489) example: ... connected[0m
+[0;32mI (27489) example: ... socket send success[0m
+[0;32mI (27489) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:13:04 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3b1a1c7d0310-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (27779) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (27789) example: 10... [0m
+[0;32mI (28799) example: 9... [0m
+[0;32mI (29799) example: 8... [0m
+[0;32mI (30799) example: 7... [0m
+[0;32mI (31799) example: 6... [0m
+[0;32mI (32799) example: 5... [0m
+[0;32mI (33799) example: 4... [0m
+[0;32mI (34799) example: 3... [0m
+[0;32mI (35799) example: 2... [0m
+[0;32mI (36799) example: 1... [0m
+[0;32mI (37799) example: 0... [0m
+[0;32mI (38799) example: Starting again![0m
+[0;32mI (38799) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (38799) example: ... allocated socket[0m
+[0;32mI (38839) example: ... connected[0m
+[0;32mI (38849) example: ... socket send success[0m
+[0;32mI (38849) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:13:15 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3b610a571a90-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (39149) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (39159) example: 10... [0m
+[0;32mI (40159) example: 9... [0m
+[0;32mI (41159) example: 8... [0m
+[0;32mI (42159) example: 7... [0m
+[0;32mI (43159) example: 6... [0m
+[0;32mI (44159) example: 5... [0m
+[0;32mI (45159) example: 4... [0m
+[0;32mI (46159) example: 3... [0m
+[0;32mI (47159) example: 2... [0m
+[0;32mI (48159) example: 1... [0m
+[0;32mI (49159) example: 0... [0m
+[0;32mI (50159) example: Starting again![0m
+[0;32mI (50159) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (50159) example: ... allocated socket[0m
+[0;32mI (50209) example: ... connected[0m
+[0;32mI (50209) example: ... socket send success[0m
+[0;32mI (50209) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:13:27 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3ba808f51a8b-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (50519) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (50529) example: 10... [0m
+[0;32mI (51529) example: 9... [0m
+[0;32mI (52529) example: 8... [0m
+[0;32mI (53529) example: 7... [0m
+[0;32mI (54529) example: 6... [0m
+[0;32mI (55529) example: 5... [0m
+[0;32mI (56529) example: 4... [0m
+[0;32mI (57529) example: 3... [0m
+[0;32mI (58529) example: 2... [0m
+[0;32mI (59529) example: 1... [0m
+[0;32mI (60529) example: 0... [0m
+[0;32mI (61529) example: Starting again![0m
+[0;32mI (61529) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (61529) example: ... allocated socket[0m
+[0;32mI (61569) example: ... connected[0m
+[0;32mI (61579) example: ... socket send success[0m
+[0;32mI (61579) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:13:38 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3bef4a9f0138-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (62089) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (62099) example: 10... [0m
+[0;32mI (63099) example: 9... [0m
+[0;32mI (64099) example: 8... [0m
+[0;32mI (65099) example: 7... [0m
+[0;32mI (66099) example: 6... [0m
+[0;32mI (67099) example: 5... [0m
+[0;32mI (68099) example: 4... [0m
+[0;32mI (69099) example: 3... [0m
+[0;32mI (70099) example: 2... [0m
+[0;32mI (71099) example: 1... [0m
+[0;32mI (72099) example: 0... [0m
+[0;32mI (73099) example: Starting again![0m
+[0;32mI (73099) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (73099) example: ... allocated socket[0m
+[0;32mI (73149) example: ... connected[0m
+[0;32mI (73149) example: ... socket send success[0m
+[0;32mI (73149) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:13:50 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3c376de400fe-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (73659) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (73669) example: 10... [0m
+[0;32mI (74669) example: 9... [0m
+[0;32mI (75669) example: 8... [0m
+[0;32mI (76669) example: 7... [0m
+[0;32mI (77669) example: 6... [0m
+[0;32mI (78669) example: 5... [0m
+[0;32mI (79669) example: 4... [0m
+[0;32mI (80669) example: 3... [0m
+[0;32mI (81669) example: 2... [0m
+[0;32mI (82669) example: 1... [0m
+[0;32mI (83669) example: 0... [0m
+[0;32mI (84669) example: Starting again![0m
+[0;32mI (84669) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (84669) example: ... allocated socket[0m
+[0;32mI (84709) example: ... connected[0m
+[0;32mI (84719) example: ... socket send success[0m
+[0;32mI (84719) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:14:01 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3c7fb9f200fa-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (85229) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (85239) example: 10... [0m
+[0;32mI (86239) example: 9... [0m
+[0;32mI (87239) example: 8... [0m
+[0;32mI (88239) example: 7... [0m
+[0;32mI (89239) example: 6... [0m
+[0;32mI (90239) example: 5... [0m
+[0;32mI (91239) example: 4... [0m
+[0;32mI (92239) example: 3... [0m
+[0;32mI (93239) example: 2... [0m
+[0;32mI (94239) example: 1... [0m
+[0;32mI (95239) example: 0... [0m
+[0;32mI (96239) example: Starting again![0m
+[0;32mI (96239) example: DNS lookup succeeded. IP=216.24.57.3[0m
+[0;32mI (96239) example: ... allocated socket[0m
+[0;32mI (96289) example: ... connected[0m
+[0;32mI (96289) example: ... socket send success[0m
+[0;32mI (96289) example: ... set socket receiving timeout success[0m
+HTTP/1.1 301 Moved Permanently
+Date: Thu, 22 Feb 2024 21:14:13 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 84
+Connection: close
+Location: https://projetao-backend.onrender.com/spreadsheet
+CF-Ray: 859a3cc81d73a52c-GRU
+CF-Cache-Status: DYNAMIC
+Server: cloudflare
+alt-svc: h3=":443"; ma=86400
+
+<a href="https://projetao-backend.onrender.com/spreadsheet">Moved Permanently</a>.
+
+[0;32mI (96599) example: ... done reading from socket. Last read return=0 errno=128.[0m
+[0;32mI (96609) example: 10... [0m
+[0;32mI (97609) example: 9... [0m
+[0;32mI (98609) example: 8... [0m
+[0;32mI (99609) example: 7... [0m

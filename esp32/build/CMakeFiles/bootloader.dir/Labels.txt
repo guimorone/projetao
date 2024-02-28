@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/lucca/Documents/projetao/build/CMakeFiles/bootloader
+/home/lucca/Documents/projetao/build/CMakeFiles/bootloader.rule
+/home/lucca/Documents/projetao/build/CMakeFiles/bootloader-complete.rule
+/home/lucca/Documents/projetao/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/lucca/Documents/projetao/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/lucca/Documents/projetao/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/lucca/Documents/projetao/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/lucca/Documents/projetao/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/lucca/Documents/projetao/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/lucca/Documents/projetao/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

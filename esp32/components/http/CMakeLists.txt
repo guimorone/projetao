@@ -1,0 +1,13 @@
+idf_component_register(SRCS "http.c"
+                    INCLUDE_DIRS "include"
+                    REQUIRES nvs_flash
+                    REQUIRES log
+                    REQUIRES esp_event
+                    REQUIRES freertos
+                    REQUIRES esp_wifi
+                    REQUIRES esp_event
+                    REQUIRES lwip
+                    REQUIRES esp_system
+                    REQUIRES esp_netif
+                    REQUIRES esp_http_client
+                    REQUIRES esp-tls)
