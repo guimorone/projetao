@@ -57,14 +57,12 @@ app
   })
   .put(async (req: Request, res: Response) => {
     try {
-      console.log('BODY', req.body);
       await doc.loadInfo();
       const sheet = doc.sheetsByTitle['polls'];
       const rows = await sheet.getRows();
 
       for (const key in req.body) {
         const value = key.replace(/[^\x00-\x7F]/g, '').trim();
-        console.log(value);
         const [index, votes1, votes2] = value.split(' ', 3);
         const indexInt = parseInt(index);
         const votes1Int = parseInt(votes1);
@@ -87,7 +85,6 @@ app
 
       res.status(200).send('Informação atualizada com sucesso!');
     } catch (error: unknown) {
-      console.error(error);
       res.status(500).send(error);
     }
   });
