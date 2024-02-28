@@ -1,10 +1,10 @@
-import express, { Express, Request, Response } from 'express';
+import express, { type Express, type Request, type Response } from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
-import type { IPolls } from './@types';
 import { parseFeedbackScore } from './utils';
+import type { IPolls } from './@types';
 
 dotenv.config();
 
@@ -32,7 +32,7 @@ app
 
       const sheet = doc.sheetsByTitle['polls'];
       const rows = await sheet.getRows();
-      const data: IPolls[] = [];
+      const data: Omit<IPolls, 'index'>[] = [];
       rows.forEach(row => {
         data.push({
           name: row.get('name') || undefined,
@@ -56,6 +56,7 @@ app
   })
   .put((req: Request, res: Response) => {
     try {
+      console.log('REQUISIÇÃO DO DISPOSITIVO CHEGOU!');
       console.log(req);
       console.log(req.body);
 

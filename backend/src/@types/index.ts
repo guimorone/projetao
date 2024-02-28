@@ -1,6 +1,7 @@
 
 
 export interface IPolls {
+  index: number;
   name?: string;
   poll: string;
   coords: number[];
