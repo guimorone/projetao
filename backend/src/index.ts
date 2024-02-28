@@ -55,15 +55,37 @@ app
       res.status(500).send(error);
     }
   })
-  .put((req: Request, res: Response) => {
+  .put(async (req: Request, res: Response) => {
     try {
-      console.log('REQUISIÇÃO DO DISPOSITIVO CHEGOU!');
-      console.log(req.body);
-      console.log(req.params);
-      console.log(req.query);
-      console.log(req.headers);
+      console.log('BODY', req.body);
+      await doc.loadInfo();
+      const sheet = doc.sheetsByTitle['polls'];
+      const rows = await sheet.getRows();
 
-      res.status(200).send('Sucesso!');
+      for (const key in req.body) {
+        const value = key.replace(/[^\x00-\x7F]/g, '').trim();
+        console.log(value);
+        const [index, votes1, votes2] = value.split(' ', 3);
+        const indexInt = parseInt(index);
+        const votes1Int = parseInt(votes1);
+        const votes2Int = parseInt(votes2);
+
+        const rowsFilter = rows.filter(row => parseInt(row.get('index')) === indexInt);
+
+        if (!rowsFilter || !rowsFilter.length) {
+          res.status(404).send('Lixeira não encontrada!');
+          return;
+        } else {
+          rowsFilter.forEach(async row => {
+            row.set('votes1', votes1Int);
+            row.set('votes2', votes2Int);
+
+            await row.save();
+          });
+        }
+      }
+
+      res.status(200).send('Informação atualizada com sucesso!');
     } catch (error: unknown) {
       console.error(error);
       res.status(500).send(error);
