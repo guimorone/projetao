@@ -11,6 +11,7 @@ dotenv.config();
 const app: Express = express();
 app.use(cors<Request>());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 const port = process.env.PORT || 3000;
 
@@ -57,11 +58,14 @@ app
   .put((req: Request, res: Response) => {
     try {
       console.log('REQUISIÇÃO DO DISPOSITIVO CHEGOU!');
-      console.log(req);
       console.log(req.body);
+      console.log(req.params);
+      console.log(req.query);
+      console.log(req.headers);
 
-      res.status(200).send(req.body);
+      res.status(200).send('Sucesso!');
     } catch (error: unknown) {
+      console.error(error);
       res.status(500).send(error);
     }
   });
