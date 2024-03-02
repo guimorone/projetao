@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
-import { Button, Card } from 'flowbite-react';
-import { classNames } from '../../utils';
+import { Card } from 'flowbite-react';
+import { classNames, formatNumber } from '../../utils';
 import { useTypedOutletContext } from '../../utils/hooks';
 import { MAP } from '../../constants/paths';
 import type { IPolls } from '../../@types';
@@ -44,25 +44,20 @@ export default function Poll() {
 		<div className="flex flex-1 flex-col items-center justify-between w-full">
 			<h1 className="text-center text-2xl sm:text-4xl font-bold mt-12">{poll.poll}</h1>
 			<div className="absolute bottom-0 inset-x-0 space-y-2">
-				<div className="flex items-center justify-between">
-					<Button color="info" className="ml-2" size="lg" onClick={handleColorChange1}>
-						Alternar cores do texto
-					</Button>
-					<Button color="info" className="mr-2" size="lg" onClick={handleColorChange2}>
-						Alternar cores do texto
-					</Button>
-				</div>
 				<div className="flex w-full max-w-screen">
 					<Card
 						className={classNames(
 							poll.color1 || 'bg-gradient-to-tr from-blue-600 to-blue-400',
 							'relative text-center w-full h-72 sm:h-80 mt-auto rounded-none rounded-tr-lg'
 						)}
+						onClick={handleColorChange1}
 					>
-						<img
-							src={poll.image1}
-							className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-64 mx-auto z-0 p-4 object-scale-down"
-						/>
+						{poll.image1 && (
+							<img
+								src={poll.image1}
+								className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-64 mx-auto z-0 p-4 object-scale-down"
+							/>
+						)}
 						<div className={classNames(poll.image1 && 'mt-4', 'space-y-2')}>
 							<h5
 								className={classNames(
@@ -75,7 +70,7 @@ export default function Poll() {
 							<p
 								className={classNames(currentTextColor1 === 'black' ? 'text-gray-900' : 'text-white', 'text-6xl  z-10')}
 							>
-								{poll.votes1}
+								{formatNumber(poll.votes1, 'decimal')}
 							</p>
 						</div>
 					</Card>
@@ -84,11 +79,14 @@ export default function Poll() {
 							poll.color2 || 'bg-gradient-to-tl from-red-600 to-red-400',
 							'relative text-center w-full h-72 sm:h-80 mt-auto rounded-none rounded-tl-lg'
 						)}
+						onClick={handleColorChange2}
 					>
-						<img
-							src={poll.image2}
-							className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-64 mx-auto z-0 p-4 object-scale-down"
-						/>
+						{poll.image2 && (
+							<img
+								src={poll.image2}
+								className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-64 mx-auto z-0 p-4 object-scale-down"
+							/>
+						)}
 						<div className={classNames(poll.image2 && 'mt-4', 'space-y-2')}>
 							<h5
 								className={classNames(
@@ -101,7 +99,7 @@ export default function Poll() {
 							<p
 								className={classNames(currentTextColor2 === 'black' ? 'text-gray-900' : 'text-white', 'text-6xl  z-10')}
 							>
-								{poll.votes2}
+								{formatNumber(poll.votes2, 'decimal')}
 							</p>
 						</div>
 					</Card>

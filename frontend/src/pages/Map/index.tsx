@@ -6,6 +6,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { TrashIcon } from '@heroicons/react/20/solid';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { TbViewfinder } from 'react-icons/tb';
+import { formatNumber } from '../../utils';
 import { useTypedOutletContext } from '../../utils/hooks';
 import { RECIFE_COORDS } from '../../constants';
 import { POLL } from '../../constants/paths';
@@ -75,7 +76,7 @@ export default function Map() {
 									{p.option1}
 									<span className="text-sm md:text-base">
 										{' '}
-										({p.votes1} {`${p.votes1 === 1 ? 'voto' : 'votos'}`})
+										({formatNumber(p.votes1, 'decimal')} {`${p.votes1 === 1 ? 'voto' : 'votos'}`})
 									</span>
 								</p>
 								<p>
@@ -83,7 +84,7 @@ export default function Map() {
 									{p.option2}
 									<span className="text-sm md:text-base">
 										{' '}
-										({p.votes2} {`${p.votes2 === 1 ? 'voto' : 'votos'}`})
+										({formatNumber(p.votes2, 'decimal')} {`${p.votes2 === 1 ? 'voto' : 'votos'}`})
 									</span>
 								</p>
 								<p>

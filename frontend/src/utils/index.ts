@@ -2,6 +2,24 @@ import { toast, type ToastPosition } from 'react-toastify';
 import * as paths from '../constants/paths';
 import type { FormEvent } from 'react';
 
+export function formatNumber(
+	value: number | bigint,
+	style: Intl.NumberFormatOptions['style'] = 'currency',
+	format: string | string[] = 'pt-BR',
+	currency: Intl.NumberFormatOptions['currency'] = 'BRL'
+): string {
+	const options: Intl.NumberFormatOptions = {
+		style,
+		currency: style === 'currency' ? currency : undefined,
+		minimumFractionDigits: 2,
+		maximumFractionDigits: style === 'currency' ? 2 : 20,
+		minimumSignificantDigits: style !== 'currency' ? 1 : undefined,
+		maximumSignificantDigits: style !== 'currency' ? 20 : undefined,
+	};
+
+	return new Intl.NumberFormat(format, options).format(value);
+}
+
 export function classNames(...classes: any[]): string {
 	return classes.filter(Boolean).join(' ');
 }
