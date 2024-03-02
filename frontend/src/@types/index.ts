@@ -1,4 +1,3 @@
-import type { Dispatch, SetStateAction } from 'react';
 import type { LatLngExpression } from 'leaflet';
 
 export interface IPolls {
@@ -23,5 +22,4 @@ export interface IFeedbacks extends Partial<ISuggestion> {
 
 export type ContextType = {
 	polls: IPolls[];
-	setPolls: Dispatch<SetStateAction<IPolls[]>>;
 };
