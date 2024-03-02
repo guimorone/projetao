@@ -36,7 +36,7 @@ app
       const data: Omit<IPolls, 'index'>[] = [];
       rows.forEach(row => {
         data.push({
-          name: row.get('name') || undefined,
+          name: row.get('name'),
           poll: row.get('poll'),
           coords: [
             parseFloat(row.get('lat').replaceAll(',', '.')),
@@ -44,7 +44,11 @@ app
           ],
           address: row.get('address'),
           option1: row.get('option1'),
+          color1: row.get('color1'),
+          image1: row.get('image1'),
           option2: row.get('option2'),
+          image2: row.get('image2'),
+          color2: row.get('color2'),
           votes1: parseInt(row.get('votes1')) || 0,
           votes2: parseInt(row.get('votes2')) || 0,
         });

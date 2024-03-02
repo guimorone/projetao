@@ -23,6 +23,8 @@ export const formatPathname = (str: string): string => {
 			return 'Mapa';
 		case paths.SUGGESTION.substring(1):
 			return 'Sugestões';
+		case paths.POLL.substring(1):
+			return 'Enquete';
 		default:
 			return str;
 	}

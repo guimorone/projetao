@@ -4,6 +4,7 @@ import DefaultPage from './pages/Default';
 import Home from './pages/Home';
 import Map from './pages/Map';
 import Suggestion from './pages/Suggestion';
+import Poll from './pages/Poll';
 import * as urlPaths from './constants/paths';
 
 const router = createBrowserRouter([
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
 			{ path: urlPaths.HOME, element: <Home /> },
 			{ path: urlPaths.MAP, element: <Map /> },
 			{ path: urlPaths.SUGGESTION, element: <Suggestion /> },
+			{ path: `${urlPaths.POLL}/:id`, element: <Poll /> },
 		],
 	},
 	{ path: '*', loader: () => redirect(urlPaths.DEFAULT) },

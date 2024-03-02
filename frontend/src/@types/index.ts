@@ -6,7 +6,11 @@ export interface IPolls {
 	coords: LatLngExpression;
 	address: string;
 	option1: string | number;
+	image1?: string;
+	color1?: string;
 	option2: string | number;
+	image2?: string;
+	color2?: string;
 	votes1: number;
 	votes2: number;
 }
