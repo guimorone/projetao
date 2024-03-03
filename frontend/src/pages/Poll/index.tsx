@@ -48,14 +48,14 @@ export default function Poll() {
 					<Card
 						className={classNames(
 							poll.color1 || 'bg-gradient-to-tr from-blue-600 to-blue-400',
-							'relative text-center w-full h-72 sm:h-80 mt-auto rounded-none rounded-tr-lg'
+							'relative text-center w-full h-40 sm:h-80 mt-auto rounded-none rounded-tr-lg'
 						)}
 						onClick={handleColorChange1}
 					>
 						{poll.image1 && (
 							<img
 								src={poll.image1}
-								className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-64 mx-auto z-0 p-4 object-scale-down"
+								className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-40 sm:h-64 mx-auto z-0 p-4 object-scale-down"
 							/>
 						)}
 						<div className={classNames(poll.image1 && 'mt-4', 'space-y-2')}>
@@ -68,7 +68,10 @@ export default function Poll() {
 								{poll.option1}
 							</h5>
 							<p
-								className={classNames(currentTextColor1 === 'black' ? 'text-gray-900' : 'text-white', 'text-6xl  z-10')}
+								className={classNames(
+									currentTextColor1 === 'black' ? 'text-gray-900' : 'text-white',
+									'text-4xl sm:text-6xl  z-10'
+								)}
 							>
 								{formatNumber(poll.votes1, 'decimal')}
 							</p>
@@ -77,14 +80,14 @@ export default function Poll() {
 					<Card
 						className={classNames(
 							poll.color2 || 'bg-gradient-to-tl from-red-600 to-red-400',
-							'relative text-center w-full h-72 sm:h-80 mt-auto rounded-none rounded-tl-lg'
+							'relative text-center w-full h-40 sm:h-80 mt-auto rounded-none rounded-tl-lg'
 						)}
 						onClick={handleColorChange2}
 					>
 						{poll.image2 && (
 							<img
 								src={poll.image2}
-								className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-64 mx-auto z-0 p-4 object-scale-down"
+								className="absolute inset-x-0 bottom-2/3 rounded-full w-auto max-w-96 h-40 sm:h-64 mx-auto z-0 p-4 object-scale-down"
 							/>
 						)}
 						<div className={classNames(poll.image2 && 'mt-4', 'space-y-2')}>
@@ -97,7 +100,10 @@ export default function Poll() {
 								{poll.option2}
 							</h5>
 							<p
-								className={classNames(currentTextColor2 === 'black' ? 'text-gray-900' : 'text-white', 'text-6xl  z-10')}
+								className={classNames(
+									currentTextColor2 === 'black' ? 'text-gray-900' : 'text-white',
+									'text-4xl sm:text-6xl  z-10'
+								)}
 							>
 								{formatNumber(poll.votes2, 'decimal')}
 							</p>

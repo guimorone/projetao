@@ -1,3 +1,4 @@
+import type { SVGProps, JSX } from 'react';
 import type { LatLngExpression } from 'leaflet';
 
 export interface IPolls {
@@ -27,3 +28,5 @@ export interface IFeedbacks extends Partial<ISuggestion> {
 export type ContextType = {
 	polls: IPolls[];
 };
+
+export type IconType = (props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) => JSX.Element;

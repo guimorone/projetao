@@ -6,7 +6,7 @@ import { MapIcon, HomeIcon } from '@heroicons/react/20/solid';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { classNames } from '../../utils';
 import * as paths from '../../constants/paths';
-import logo from '../../assets/logo.png';
+import { LogoIcon } from '../../utils/icons';
 import type { INavbarProps } from './types';
 
 const navigation = [
@@ -26,15 +26,13 @@ const Navbar: FC<INavbarProps> = ({ show = true }) => {
 		<header
 			className={classNames(
 				show ? 'visible transition-all duration-500' : 'invisible transition-all duration-500 -translate-y-full',
+				pathname.includes(paths.POLL) ? 'w-full' : 'w-fit',
 				'sticky inset-x-0 top-0 z-40 w-fit ml-auto md:mx-auto'
 			)}
 		>
 			{pathname.includes(paths.POLL) ? (
 				<Link to={paths.HOME}>
-					<img
-						src={logo}
-						className="text-white bg-gradient-to-b from-orange-600 to-orange-400 w-11/12 sm:w-1/4 mx-auto rounded-lg p-8 m-4"
-					/>
+					<LogoIcon className="text-teal-950 w-5/6 sm:w-1/2 lg:w-1/4 mx-auto rounded-lg p-8 my-4" />
 				</Link>
 			) : (
 				<>
