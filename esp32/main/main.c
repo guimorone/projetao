@@ -8,12 +8,12 @@
 #include "freertos/task.h"
 #include "freertos/queue.h"
 #include "freertos/semphr.h"
+#include "flash.h"
 
-SemaphoreHandle_t mutex = ((void*)(1));
 Votacao votos = { .id = 0, .voto_1 = 0, .voto_2 = 0};
 
 void app_main(void)
-{
+{ 
 
     //Initialize NVS
     esp_err_t ret = nvs_flash_init();
@@ -22,7 +22,11 @@ void app_main(void)
       ret = nvs_flash_init();
     }
     ESP_ERROR_CHECK(ret);
+    initNVM();
     ESP_ERROR_CHECK(esp_netif_init());
+
+    read_votes(&votos);
+    printf("Total 1: %ld, 2: %ld\n", votos.voto_1, votos.voto_2);
 
     configure_infrared_io();
     init_wifi();

@@ -10,7 +10,6 @@
 
 #define INF_GPIO_1          23
 #define INF_GPIO_2          22
-#define INF_GPIO_3          21
 #define DETECTED            0
 #define NOT_DETECTED        1
 

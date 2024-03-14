@@ -31,7 +31,6 @@ static const char *TAG = "HTTP_CLIENT";
 #define CONFIG_EXAMPLE_HTTP_ENDPOINT_URL "https://projetao-backend.onrender.com/spreadsheet"
 
 extern Votacao votos;
-extern SemaphoreHandle_t mutex;
 
 /* Root cert for howsmyssl.com, taken from howsmyssl_com_root_cert.pem
 
@@ -184,6 +183,7 @@ static void http_rest_with_hostname_path(void)
                 esp_http_client_get_content_length(client));
     } else {
         ESP_LOGE(TAG, "HTTP PUT request failed: %s", esp_err_to_name(err));
+        esp_restart();
     }
 }
 
@@ -194,7 +194,7 @@ static void http_test_task(void *pvParameters)
 
     while(1){
         http_rest_with_hostname_path();
-        vTaskDelay(pdMS_TO_TICKS(60000));
+        vTaskDelay(pdMS_TO_TICKS(10000));
     }
 
     vTaskDelete(NULL);
