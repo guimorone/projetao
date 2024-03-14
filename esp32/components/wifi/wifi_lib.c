@@ -46,7 +46,25 @@ wifi_config_t wifi_configs[MAX_AP_N] = {
                 .ssid = {"Karen"},
                 .password = {"z3klrlip"}
             }
-        }
+        },
+        {
+            .sta = {
+                .ssid = {"Deposita"},
+                .password = {"dep123456"}
+            }
+        },
+        {
+            .sta = {
+                .ssid = {"Deposita 2"},
+                .password = {"dep123456"}
+            }
+        },
+        {
+            .sta = {
+                .ssid = {"Deposita 3"},
+                .password = {"dep123456"}
+            }
+        },
 };
 
 static void event_handler(void* arg, esp_event_base_t event_base,
