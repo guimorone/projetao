@@ -87,10 +87,15 @@ export default function Map() {
 										({formatNumber(p.votes2, 'decimal')} {`${p.votes2 === 1 ? 'voto' : 'votos'}`})
 									</span>
 								</p>
-								<p>
-									<strong>Criada por: </strong>
-									{p.name || 'Anônimo'}
-								</p>
+								{p.areaTraffic && (
+									<p>
+										<strong>Movimento pela área:</strong>
+										{" "}{formatNumber(p.areaTraffic, "decimal")}{" "}
+										<span className="text-sm md:text-base">
+												{`${p.areaTraffic === 1 ? "pessoa" : "pessoas"}`}
+										</span>
+									</p>
+								)}
 								<div className="pt-4 pb-2">
 									<Link
 										to={`${POLL}/${index}`}
