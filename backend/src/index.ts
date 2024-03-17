@@ -51,6 +51,7 @@ app
           color2: row.get('color2'),
           votes1: parseInt(row.get('votes1')) || 0,
           votes2: parseInt(row.get('votes2')) || 0,
+          areaTraffic: row.get('areaTraffic'),
         });
       });
 

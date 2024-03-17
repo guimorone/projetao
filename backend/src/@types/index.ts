@@ -12,6 +12,7 @@ export interface IPolls {
   color2?: string;
   votes1: number;
   votes2: number;
+  areaTraffic?: string;
 }
 
 export interface ISuggestion {
